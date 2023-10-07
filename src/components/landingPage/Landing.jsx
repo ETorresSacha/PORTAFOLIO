@@ -90,8 +90,16 @@ const LandingPage = () => {
         <div className="conteiner-text" style={{ border: "solid" }}>
           <h1 className="title-landing">¡Hola! Soy Erik</h1>
           <h3>Desarrollador web Full Stack</h3>
-          <GitHubIcon />
-          <LinkedInIcon />
+          <div
+            style={{
+              display: "flex",
+              gap: "15px",
+              justifyContent: "center",
+            }}
+          >
+            <GitHubIcon />
+            <LinkedInIcon />
+          </div>
 
           {/* <h4 className="h4-landing">
             Soy desarrollador web, en mi rol como Full Stack trabajé tanto en el Back-End como en el Front-End,
@@ -104,8 +112,40 @@ const LandingPage = () => {
             gestión de la base de datos.
           </h4> */}
         </div>
-        <div style={{ background: "red", width: "100px", height: "100px" }}>
-          hola
+
+        <div
+          style={{
+            border: "solid",
+            display: "flex",
+            width: "auto",
+            borderRadius: "1200px 390px 420px 250px",
+
+            height: "auto",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {/* <div
+            style={{
+              border: "solid",
+              display: "flex",
+              width: "100%",
+              height: "100%",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: "1200px 350px 250px 250px",
+              position: "absolute",
+              top: "342px",
+            }}
+          ></div> */}
+          <img
+            style={{
+              maxWidth: "70%",
+              minWidth: "15%",
+              position: "relative",
+            }}
+            src="../../../image/foto.png"
+          />
         </div>
         {/* <div className="btn-landig">
           <Button

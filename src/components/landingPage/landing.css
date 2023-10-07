@@ -5,6 +5,7 @@
 
 .conteiner-landing{
     display:flex;
+    flex-wrap: wrap;
     background-image: url('../../../image/STORE2.png'); 
     background-repeat: no-repeat;
     background-size: cover; 
@@ -16,6 +17,7 @@
     max-width: 100%;
     min-width: 25%;
     background-position: center; 
+
 
 }
 
