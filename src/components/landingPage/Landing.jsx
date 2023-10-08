@@ -7,15 +7,15 @@ import { startOption } from "../../toolkit/slice";
 import KeyboardDoubleArrowUpRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowUpRounded";
 import Button from "@mui/material/Button";
 import { useRef } from "react";
-import Servicio from "./opcionesNav/Servicio";
-import SobreNosotros from "./opcionesNav/sobreNosotros";
-import Contactos from "./opcionesNav/Contactos";
 import Footer from "../footer/Footer";
 import { useNavigate } from "react-router-dom";
 import Logo from "../nav/opcionesNav/Logo";
 import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Projects from "./opcionesNav/Projects";
+import Profile from "./opcionesNav/Profile";
+import Contact from "./opcionesNav/Contact";
 const LandingPage = () => {
   const navigate = useNavigate();
   const Inicio = useRef();
@@ -87,7 +87,12 @@ const LandingPage = () => {
           optionNavigate={<OptionsNavigate optionsNav={optionsNav} />}
         />
 
-        <div className="conteiner-text" style={{ border: "solid" }}>
+        <div
+          className="conteiner-text"
+          style={{
+            border: "solid",
+          }}
+        >
           <h1 className="title-landing">¡Hola! Soy Erik</h1>
           <h3>Desarrollador web Full Stack</h3>
           <div
@@ -100,25 +105,17 @@ const LandingPage = () => {
             <GitHubIcon />
             <LinkedInIcon />
           </div>
-
-          {/* <h4 className="h4-landing">
-            Soy desarrollador web, en mi rol como Full Stack trabajé tanto en el Back-End como en el Front-End,
-            utilizando una variedad de tecnologías, desde JavaScript, Python,
-            ES6, CSS y HTML hasta React, Vite, Redux, Redux Toolkit, Node.Js y
-            Express. También tengo experiencia con bases de datos como
-            PostgreSQL, Mongoose, SQL Server y MySQL. Estas habilidades me
-            permiten abordar proyectos de desarrollo web de manera integral y
-            eficiente, desde la creación de la interfaz de usuario hasta la
-            gestión de la base de datos.
-          </h4> */}
         </div>
 
         <div
           style={{
-            border: "solid",
             display: "flex",
             width: "auto",
-            borderRadius: "1200px 390px 420px 250px",
+            // borderRadius: "1200px 390px 420px 200px",
+            // background:
+            //   "radial-gradient(circle, rgba(176,174,238,1) 0%, rgba(29,30,31,1) 100%)",
+            // //background: "linear-gradient(rgba(226, 233, 241, 0.918), rgba(187, 187, 187, 0.912))",
+            // boxShadow: "0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff",
 
             height: "auto",
             justifyContent: "center",
@@ -143,6 +140,8 @@ const LandingPage = () => {
               maxWidth: "70%",
               minWidth: "15%",
               position: "relative",
+
+              //background:"radial-gradient(circle, rgba(176,174,238,1) 0%, rgba(29,30,31,1) 100%)",
             }}
             src="../../../image/foto.png"
           />
@@ -171,7 +170,7 @@ const LandingPage = () => {
         ref={Perfil}
         style={{ width: "100%", height: "100vh", background: "gray" }}
       >
-        <Servicio />
+        <Profile />
       </section>
       <section
         ref={Proyectos}
@@ -181,10 +180,10 @@ const LandingPage = () => {
           justifyContent: "center",
         }}
       >
-        <SobreNosotros />
+        <Projects />
       </section>
       <section ref={Contáctame} style={{ width: "100%", height: "100vh" }}>
-        <Contactos />
+        <Contact />
       </section>
 
       {/* Boton para volver al Top = 0 */}

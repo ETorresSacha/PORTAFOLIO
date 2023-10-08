@@ -96,7 +96,7 @@ const images = [
   },
 ];
 
-const SobreNosotros = () => {
+const Projects = () => {
   const description = [
     {
       title: "Nosotros",
@@ -235,5 +235,5 @@ const SobreNosotros = () => {
   );
 };
 
-export default SobreNosotros;
+export default Projects;
 //!FALTA MEJORAR EN ESTILOS

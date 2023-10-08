@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { blue } from "@mui/material/colors";
 
-const Contactos = () => {
+const Contact = () => {
   const ColorButton = styled(Button)(({ theme }) => ({
     color: theme.palette.getContrastText(blue[500]),
     backgroundColor: blue[500],
@@ -84,4 +84,4 @@ const Contactos = () => {
   );
 };
 
-export default Contactos;
+export default Contact;
