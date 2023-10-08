@@ -3,11 +3,12 @@
     padding: 0;
 }
 
+/* LANDING*/
 .conteiner-landing{
     display:flex;
     flex-wrap: wrap;
     /* background: "radial-gradient (circle,red,brown,orange,yellow,blue)"; */
-    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    background: radial-gradient(circle at -1% 40%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
     /* background: radial-gradient(circle, rgba(176,174,238,1) 0%, rgb(78, 85, 93) 100%); */
     /* background:linear-gradient(rgba(226, 233, 241, 0.918), rgba(187, 187, 187, 0.912)); */
     /* background-image: url('../../../image/STORE2.png');  */
@@ -36,13 +37,24 @@
     background: transparent;
 }
 
+
 .title-landing{
     width:100%;
     font-family: 'Times New Roman', Times, serif;
     font-style:oblique;
+    font-size: 600%;
+    color:darkorange;
+    text-shadow: 2px 2px 1px rgb(255, 247, 247);
+}
+.text-landing{
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
     font-size: 300%;
-    color:rgb(172, 15, 73);
-    text-shadow: 3px 3px 3px rgb(10, 10, 10);
+    color:rgb(252, 242, 229);
+    margin: 2px 0 15px 0;
+    
+
 }
 
 .h4-landing{
@@ -59,5 +71,16 @@
  @media screen and (max-width:1050px) {
     .conteiner-text{
         backdrop-filter: blur(5px);
+    }
+    .title-landing{
+        font-size: 450%;
+    }
+    .conteiner-landing{
+        background: radial-gradient(circle at -1% 0%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+
+    }
+    .text-landing{
+        font-size: 200%;
+
     }
 }

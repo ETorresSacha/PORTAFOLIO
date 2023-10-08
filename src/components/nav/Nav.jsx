@@ -21,19 +21,8 @@ const Nav = ({ logo, optionNavigate, search, perfilUsuario }) => {
           justifyContent: "center",
         }}
       >
-        {/* LOGO */}
-        {logo}
-
         {/* OPCIONES PARA NAVEGAR */}
         {optionNavigate}
-
-        {/* SEARCH */}
-        {search}
-
-        {/* LOGIN DEL USUARIO */}
-
-        {/* PERFIL DEL USUARIO */}
-        {perfilUsuario}
       </div>
     </AppBar>
   );
