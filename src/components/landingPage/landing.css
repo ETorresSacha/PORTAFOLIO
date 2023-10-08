@@ -7,8 +7,8 @@
     display:flex;
     flex-wrap: wrap;
     /* background: "radial-gradient (circle,red,brown,orange,yellow,blue)"; */
-    background:linear-gradient(#225763, #2f89b3);
-    background: radial-gradient(circle, rgba(176,174,238,1) 0%, rgb(78, 85, 93) 100%);
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    /* background: radial-gradient(circle, rgba(176,174,238,1) 0%, rgb(78, 85, 93) 100%); */
     /* background:linear-gradient(rgba(226, 233, 241, 0.918), rgba(187, 187, 187, 0.912)); */
     /* background-image: url('../../../image/STORE2.png');  */
     background-repeat: no-repeat;

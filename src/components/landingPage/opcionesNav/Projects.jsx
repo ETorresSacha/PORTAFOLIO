@@ -1,235 +1,194 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import * as React from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import ButtonBase from "@mui/material/ButtonBase";
-
-const ImageButton = styled(ButtonBase)(({ theme }) => ({
-  position: "relative",
-  height: 350,
-  [theme.breakpoints.down("sm")]: {
-    width: "100% !important", // Overrides inline-style
-    height: 100,
-  },
-  "&:hover, &.Mui-focusVisible": {
-    zIndex: 1,
-    "& .MuiImageBackdrop-root": {
-      opacity: 0.15,
-    },
-    "& .MuiImageMarked-root": {
-      opacity: 0,
-    },
-    "& .MuiTypography-root": {
-      border: "4px solid currentColor",
-    },
-  },
-}));
-
-const ImageSrc = styled("span")({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  backgroundSize: "cover",
-  backgroundPosition: "center 40%",
-});
-
-const Image = styled("span")(({ theme }) => ({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  color: theme.palette.common.white,
-}));
-
-const ImageBackdrop = styled("span")(({ theme }) => ({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  backgroundColor: theme.palette.common.black,
-  opacity: 0.4,
-  transition: theme.transitions.create("opacity"),
-}));
-
-const ImageMarked = styled("span")(({ theme }) => ({
-  height: 3,
-  width: 18,
-  backgroundColor: theme.palette.common.white,
-  position: "absolute",
-  bottom: -2,
-  left: "calc(50% - 9px)",
-  transition: theme.transitions.create("opacity"),
-}));
-
-const images = [
-  {
-    url: "../../../../image/imagen-nosotros.jpg",
-    title: "Nosotros",
-    width: "25%",
-  },
-  {
-    url: "../../../../image/mision.jpg",
-    title: "Misión",
-    width: "25%",
-  },
-  {
-    url: "../../../../image/iconos-vision.jpg",
-    title: "Visión",
-    width: "25%",
-  },
-  {
-    url: "../../../../image/VALORES-min.png",
-    title: "Valores",
-    width: "25%",
-  },
-];
 
 const Projects = () => {
-  const description = [
+  const proyectos = [
     {
-      title: "Nosotros",
-      contexto:
-        "Bienvenidos a Store, tu destino en línea para productos de alta calidad y servicio excepcional. Fundada en 2020, nuestra tienda nació de una pasión por la moda. Desde entonces, hemos trabajado incansablemente para ofrecer a nuestros clientes una experiencia de compra única y satisfactoria.",
+      id: "6521f3b6f41c57ebd5b01794",
+      title: "FOOD",
+      description:
+        "En esta página te ayuda a encontrar las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
+      video: "../../../../image/iconos-vision.jpg",
+      links: {
+        depoly: "https://food-pi.up.railway.app/",
+        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
+        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
+      },
     },
     {
-      title: "Misión",
-      contexto:
-        "En STORE, nuestra misión es simple pero poderosa: ofrecer a nuestros clientes productos de alta calidad que mejoren sus vidas. Estamos comprometidos en proporcionar una selección cuidadosamente curada de productos que inspiren, solucionen problemas y aporten alegría a tu día a día. Trabajamos incansablemente para ser tu fuente confiable de productos excepcionales y un servicio al cliente incomparable.",
-    },
-    {
-      title: "Visión",
-      contexto:
-        " En STORE, nuestra misión es simple pero poderosa: ofrecer a nuestros clientes productos de alta calidad que mejoren sus vidas. Estamos comprometidos en proporcionar una selección cuidadosamente curada de productos que inspiren, solucionen problemas y aporten alegría a tu día a día. Trabajamos incansablemente para ser tu fuente confiable de productos excepcionales y un servicio al cliente incomparable.",
-    },
-    {
-      title: "Valores",
-      contexto:
-        " En el corazón de todo lo que hacemos se encuentran nuestros valores fundamentales:",
-      items: [
-        {
-          valor: "Calidad",
-          texto:
-            "Creemos en la excelencia y nos esforzamos por ofrecer productos que cumplan y superen sus expectativas.",
-        },
-        {
-          valor: "Pasión",
-          texto:
-            "Estamos apasionados por lo que hacemos y por las comunidades a las que servimos.",
-        },
-        {
-          valor: "Innovación",
-          texto: "Buscamos constantemente nuevas formas de mejorar y crecer.",
-        },
-        {
-          valor: "Compromiso",
-          texto: "Compromiso: Tu satisfacción es nuestra máxima prioridad.",
-        },
-      ],
+      id: "6521f58ff41c57ebd5b01796",
+      title: "SKILL HUB",
+      description:
+        "En esta pagina puedes encontrar a las personas indicadas para que realicen los trabajos eventuales que necesitas en tu hogar, empresa o institución.",
+      video: "../../../../image/imagen-nosotros.jpg",
+      links: {
+        depoly: "https://skillhub-production.netlify.app/",
+        youtube: "https://www.youtube.com/watch?v=NhQ30hiDNr0",
+        gitHub: "https://github.com/ETorresSacha/skillHub-front",
+      },
     },
   ];
-  const [estado, setEstado] = React.useState("");
-  const handleClick = (element) => {
-    setEstado(element);
-  };
-
-  const MostrarContenido = () => {
-    const result = description.filter((ele) => ele.title === estado);
-
-    return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "100%",
-          padding: "25px",
-          textAlign: "justify",
-          alignItems: "center",
-        }}
-      >
-        <h2
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            padding: "35px",
-          }}
-        >
-          {result[0]?.title}
-        </h2>
-        <p>{result[0]?.contexto}</p>
-        <div>
-          {!result[0]?.items
-            ? ""
-            : result[0]?.items.map((element) => {
-                return (
-                  <li style={{ display: "flex", margin: "5px", width: "100%" }}>
-                    <h3 style={{ fontSize: "16px" }}>{element.valor}:</h3>
-                    {element.texto}
-                  </li>
-                );
-              })}
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div
       style={{
+        border: "solid white",
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
-        justifyContent: "space-around",
+        flexWrap: "wrap",
+        padding: "10px",
+        justifyContent: "space-evenly",
+        alignItems: "center",
       }}
     >
-      <div>
-        <Box sx={{ width: "100%" }}>
-          {images.map((image) => (
-            <ImageButton
-              focusRipple
-              key={image.title}
+      <h1 className="h4-landing">MIS PROYECTOS</h1>
+      <div class="card mb-3" style={{ maxWidth: "540px" }}>
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../../../../image/clothes.jpg"
+              class="img-fluid rounded-start"
               style={{
-                width: image.width,
+                width: "100%",
+                height: "100%",
               }}
-            >
-              <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-              <ImageBackdrop className="MuiImageBackdrop-root" />
-              <Image>
-                <Typography
-                  component="span"
-                  variant="subtitle1"
-                  color="inherit"
-                  sx={{
-                    position: "relative",
-                    p: 4,
-                    pt: 2,
-                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                  }}
-                  onClick={() => handleClick(image.title)}
+              alt="production"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">ONLINE STORE</h5>
+              <p class="card-text">
+                Esta página es un ecommers, en esta tienda virtual puedes
+                encontrar las mejores prendas que estan de moda y a los mejores
+                precios.
+              </p>
+              <div
+                class="card-text"
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "10px",
+                  alignContent: "center",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <a
+                  href="https://github.com/ETorresSacha/STORE-ONLINE-FRONT"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {image.title}
-                  <ImageMarked className="MuiImageMarked-root" />
-                </Typography>
-              </Image>
-            </ImageButton>
-          ))}
-        </Box>
+                  <GitHubIcon
+                    style={{
+                      color: "black",
+                      border: "solid 1px",
+                      borderRadius: "50%",
+                    }}
+                  />
+                </a>
+
+                <a href="" target="_blank" rel="noreferrer">
+                  <button type="button" class="btn btn-outline-primary">
+                    Ver la página
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            background: "grey",
+            backdroFilter: "blur(10px)",
+          }}
+        >
+          En desarrollo
+        </div>
       </div>
 
-      <div>
-        <MostrarContenido />
+      <div
+        style={{
+          border: "solid white",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "15px",
+          justifyContent: "space-evenly",
+          padding: "15px",
+        }}
+      >
+        {proyectos.map((element) => {
+          return (
+            <div
+              key={element.id}
+              class="card mb-3"
+              style={{ maxWidth: "540px" }}
+            >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src={element.video}
+                    class="img-fluid rounded-start"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                    }}
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">{element.title}</h5>
+                    <p class="card-text">{element.description}</p>
+                    <p
+                      class="card-text"
+                      style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "10px",
+                        alignContent: "center",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <a
+                        href={element.links.gitHub}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <GitHubIcon
+                          style={{
+                            color: "black",
+                            border: "solid 1px",
+                            borderRadius: "50%",
+                          }}
+                        />
+                      </a>
+
+                      <a
+                        href={element.links.youtube}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <YouTubeIcon style={{ color: "red" }} />
+                      </a>
+                      <a
+                        href={element.links.depoly}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button type="button" class="btn btn-outline-primary">
+                          Ver la página
+                        </button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import "./servicio.css";
+import "./profile.css";
 
 const Profile = () => {
   const plataformas = [
@@ -36,7 +36,7 @@ const Profile = () => {
     },
   ];
   return (
-    <div className="conteiner-servicio">
+    <div className="conteiner-profile">
       <div>
         <h1> ¡Sobre mi!</h1>
         <h4 className="h4-landing">
@@ -139,7 +139,7 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="conteiner-car-servicio"></div>
+      <div className="conteiner-car-profile"></div>
     </div>
   );
 };

@@ -18,6 +18,8 @@ const Contact = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
+        background:
+          "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
       }}
     >
       <img src="../../../../image/portada.png" />
