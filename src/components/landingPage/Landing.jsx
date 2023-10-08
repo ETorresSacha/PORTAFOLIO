@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 import { useRef } from "react";
 import Footer from "../footer/Footer";
 import { useNavigate } from "react-router-dom";
-import Logo from "../nav/opcionesNav/Logo";
+
 import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -82,23 +82,14 @@ const LandingPage = () => {
     <div>
       {/* Inicio */}
       <section ref={Inicio} className="conteiner-landing">
-        <Nav
-          logo={<Logo />}
-          optionNavigate={<OptionsNavigate optionsNav={optionsNav} />}
-        />
+        <Nav optionNavigate={<OptionsNavigate optionsNav={optionsNav} />} />
 
-        <div
-          className="conteiner-text"
-          style={{
-            border: "solid",
-          }}
-        >
+        <div className="conteiner-text">
           <h1 className="title-landing">¡Hola! Soy Erik</h1>
           <h3>Desarrollador web Full Stack</h3>
           <div
             style={{
               display: "flex",
-              gap: "15px",
               justifyContent: "center",
             }}
           >
@@ -106,70 +97,10 @@ const LandingPage = () => {
             <LinkedInIcon />
           </div>
         </div>
-
-        <div
-          style={{
-            display: "flex",
-            width: "auto",
-            // borderRadius: "1200px 390px 420px 200px",
-            // background:
-            //   "radial-gradient(circle, rgba(176,174,238,1) 0%, rgba(29,30,31,1) 100%)",
-            // //background: "linear-gradient(rgba(226, 233, 241, 0.918), rgba(187, 187, 187, 0.912))",
-            // boxShadow: "0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff",
-
-            height: "auto",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {/* <div
-            style={{
-              border: "solid",
-              display: "flex",
-              width: "100%",
-              height: "100%",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "1200px 350px 250px 250px",
-              position: "absolute",
-              top: "342px",
-            }}
-          ></div> */}
-          <img
-            style={{
-              maxWidth: "70%",
-              minWidth: "15%",
-              position: "relative",
-
-              //background:"radial-gradient(circle, rgba(176,174,238,1) 0%, rgba(29,30,31,1) 100%)",
-            }}
-            src="../../../image/foto.png"
-          />
-        </div>
-        {/* <div className="btn-landig">
-          <Button
-            sx={{
-              background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
-              border: 2,
-              borderRadius: 3,
-              boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-              color: "white",
-              width: 200,
-              height: 48,
-              padding: "0 30px",
-            }}
-            onClick={() => navigate(`/home`)}
-          >
-            Ver mas
-          </Button>
-        </div> */}
       </section>
 
       {/* Opciones del nav */}
-      <section
-        ref={Perfil}
-        style={{ width: "100%", height: "100vh", background: "gray" }}
-      >
+      <section ref={Perfil} style={{ width: "100%", height: "100vh" }}>
         <Profile />
       </section>
       <section
@@ -184,7 +115,15 @@ const LandingPage = () => {
       >
         <Projects />
       </section>
-      <section ref={Contáctame} style={{ width: "100%", height: "100vh" }}>
+      <section
+        ref={Contáctame}
+        style={{
+          width: "100%",
+          height: "100vh",
+          background:
+            "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
+        }}
+      >
         <Contact />
       </section>
 

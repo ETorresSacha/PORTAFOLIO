@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { useDispatch, useSelector } from "react-redux";
 import { startOption } from "../../../toolkit/slice";
+import "../nav.css";
 
 const OptionsNavigate = ({ optionsNav }) => {
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ const OptionsNavigate = ({ optionsNav }) => {
     dispatch(startOption(eleRef));
   };
   return (
-    <div>
+    <div className="conteiner-OpcionesNav">
       {/* Menú desplegable */}
       <Box
         sx={{
@@ -79,17 +80,19 @@ const OptionsNavigate = ({ optionsNav }) => {
 
       {/* opciones del nav */}
       <Box
+        className="opciones-nav"
         sx={{
-          display: { xs: "none", md: "flex" },
+          width: "100%",
+          display: { xs: "none", md: "flex", justifyContent: "space-evenly" },
           mr: 5,
-          marginLeft: "auto",
         }}
       >
         {optionsNav.map((page) => (
           <Button
+            className="btn-optionNav"
             key={page}
             onClick={() => scrollHnadler(page)}
-            sx={{ my: 2, display: "block", color: "white" }}
+            sx={{ my: 2, display: "block", color: "rgb(146, 229, 232)" }}
           >
             {page}
           </Button>

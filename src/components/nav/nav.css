@@ -10,3 +10,41 @@
     backdrop-filter: blur(15px);
     
 }
+
+/* Estilos Opciones nav */
+.conteiner-OpcionesNav{
+    display: flex;
+     width: 80%;
+    justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+    .conteiner-OpcionesNav{
+        display: flex;
+        justify-content:end
+    
+    }
+  }
+
+  .btn-optionNav:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(241, 153, 45);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom:1px;
+    transition: 0.3s;
+    
+
+  }
+  .btn-optionNav:hover{
+    color: rgb(239, 249, 249);
+
+  }
+  .btn-optionNav:hover:after{
+    width: 100%;
+
+
+  }

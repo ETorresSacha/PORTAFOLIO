@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { blue } from "@mui/material/colors";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Contact = () => {
   const ColorButton = styled(Button)(({ theme }) => ({
@@ -18,8 +19,7 @@ const Contact = () => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        background:
-          "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
+        //background: "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
       }}
     >
       <img src="../../../../image/portada.png" />
@@ -57,13 +57,8 @@ const Contact = () => {
             }}
           >
             <TextField id="outlined-basic" label="Nombre" variant="outlined" />
-            <TextField
-              id="outlined-basic"
-              label="Apellido"
-              variant="outlined"
-            />
+
             <TextField id="outlined-basic" label="Correo" variant="outlined" />
-            <TextField id="outlined-basic" label="Celular" variant="outlined" />
           </div>
 
           <TextField
@@ -81,6 +76,7 @@ const Contact = () => {
             Enviar
           </ColorButton>
         </div>
+        <WhatsAppIcon style={{ color: "green", position: "absolute" }} />
       </div>
     </div>
   );

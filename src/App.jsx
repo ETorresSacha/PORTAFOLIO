@@ -11,14 +11,12 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import Home from "./components/home/Home";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<Home />} />
       </Routes>
     </ThemeProvider>
   );

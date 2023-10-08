@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <div
       style={{
-        border: "solid white",
+        border: "solid red",
         display: "flex",
         flexDirection: "column",
         flexWrap: "wrap",

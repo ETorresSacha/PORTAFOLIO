@@ -11,12 +11,16 @@ const Nav = ({ logo, optionNavigate, search, perfilUsuario }) => {
       position="fixed"
       sx={{
         backdropFilter: "blur(10px)",
-        boxShadow: "-moz-initial",
+        display: "flex",
         background: "transparent",
-        //background: "rgba(203, 175, 189, 0.632)",
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         {/* LOGO */}
         {logo}
 
@@ -30,7 +34,7 @@ const Nav = ({ logo, optionNavigate, search, perfilUsuario }) => {
 
         {/* PERFIL DEL USUARIO */}
         {perfilUsuario}
-      </Toolbar>
+      </div>
     </AppBar>
   );
 };

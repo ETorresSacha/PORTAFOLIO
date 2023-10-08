@@ -68,7 +68,6 @@ const Profile = () => {
             gap: "10px",
             width: "100%",
             justifyContent: "center",
-            margin: "30px",
           }}
         >
           {plataformas.map((element, index) => {
@@ -138,8 +137,6 @@ const Profile = () => {
           })}
         </div>
       </div>
-
-      <div className="conteiner-car-profile"></div>
     </div>
   );
 };
