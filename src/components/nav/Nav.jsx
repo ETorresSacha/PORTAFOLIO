@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 
 import "./nav.css";
 
-const Nav = ({ logo, optionNavigate, search, perfilUsuario }) => {
+const Nav = ({ optionNavigate }) => {
   return (
     <AppBar
       position="fixed"

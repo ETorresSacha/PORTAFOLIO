@@ -27,7 +27,7 @@ const LandingPage = () => {
   const { option } = useSelector((state) => state.clothes);
 
   // Opciones del Nav
-  const optionsNav = ["Inicio", "Perfil", "Proyectos", "Contáctame"];
+  const optionsNav = ["Inicio", "Proyectos", "Perfil", "Contáctame"];
 
   // Scroll to section
   useEffect(() => {
@@ -36,14 +36,14 @@ const LandingPage = () => {
         top: Inicio.current.offsetTop,
         behavior: "smooth",
       });
-    if (option === "Perfil")
-      window.scrollTo({
-        top: Perfil.current.offsetTop,
-        behavior: "smooth",
-      });
     if (option === "Proyectos")
       window.scrollTo({
         top: Proyectos.current.offsetTop,
+        behavior: "smooth",
+      });
+    if (option === "Perfil")
+      window.scrollTo({
+        top: Perfil.current.offsetTop,
         behavior: "smooth",
       });
     if (option === "Contáctame")
@@ -100,14 +100,12 @@ const LandingPage = () => {
       </section>
 
       {/* Opciones del nav */}
-      <section ref={Perfil} style={{ width: "100%", height: "100vh" }}>
-        <Profile />
-      </section>
+
       <section
         ref={Proyectos}
         style={{
           width: "100%",
-          height: "100vh",
+          height: "auto",
           justifyContent: "center",
           background:
             "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
@@ -115,6 +113,11 @@ const LandingPage = () => {
       >
         <Projects />
       </section>
+
+      <section ref={Perfil} style={{ width: "100%", height: "100vh" }}>
+        <Profile />
+      </section>
+
       <section
         ref={Contáctame}
         style={{

@@ -37,17 +37,19 @@ const Profile = () => {
   ];
   return (
     <div className="conteiner-profile">
-      <div>
-        <h1> ¡Sobre mi!</h1>
+      <div className="text-profile">
+        <h1> ¡Sobre mí!</h1>
         <h4 className="h4-landing">
-          Soy desarrollador web, en mi rol como Full Stack trabajé tanto en el
-          Back-End como en el Front-End, utilizando una variedad de tecnologías,
-          desde JavaScript, Python, ES6, CSS y HTML hasta React, Vite, Redux,
-          Redux Toolkit, Node.Js y Express. También tengo experiencia con bases
-          de datos como PostgreSQL, Mongoose, SQL Server y MySQL. Estas
-          habilidades me permiten abordar proyectos de desarrollo web de manera
-          integral y eficiente, desde la creación de la interfaz de usuario
-          hasta la gestión de la base de datos.
+          <p>
+            Soy desarrollador web, como Full Stack; mi prioridad es la
+            interacción y la buena experiencia del usuario.
+          </p>
+          <p>
+            Tengo un background en Ingeniería Química, lo que me ha enseñado a
+            adaptarme al ritmo del trabajo, ser resiliente y la capacidad de
+            resolución de problemas. Estas habilidades me han ayudado a mejorar
+            como programador.
+          </p>
         </h4>
       </div>
       <div

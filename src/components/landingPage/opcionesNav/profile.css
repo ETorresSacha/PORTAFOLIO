@@ -12,6 +12,9 @@
     justify-content:space-evenly
 }
 
+.text-profile{
+    border: solid white;
+}
 
 
 @media screen and (max-width:1240px) {

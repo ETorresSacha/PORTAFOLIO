@@ -8,7 +8,7 @@ const Projects = () => {
       id: "6521f3b6f41c57ebd5b01794",
       title: "FOOD",
       description:
-        "En esta página te ayuda a encontrar las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
+        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
       video: "../../../../image/iconos-vision.jpg",
       links: {
         depoly: "https://food-pi.up.railway.app/",
@@ -28,6 +28,18 @@ const Projects = () => {
         gitHub: "https://github.com/ETorresSacha/skillHub-front",
       },
     },
+    {
+      id: "6521f3b6f41c57ebd5b01794",
+      title: "FOOD",
+      description:
+        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
+      video: "../../../../image/iconos-vision.jpg",
+      links: {
+        depoly: "https://food-pi.up.railway.app/",
+        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
+        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
+      },
+    },
   ];
   return (
     <div
@@ -42,7 +54,7 @@ const Projects = () => {
       }}
     >
       <h1 className="h4-landing">MIS PROYECTOS</h1>
-      <div class="card mb-3" style={{ maxWidth: "540px" }}>
+      <div class="card mb-3" style={{ maxWidth: "540px", margin: "15px" }}>
         <div class="row g-0">
           <div class="col-md-4">
             <img
@@ -111,11 +123,15 @@ const Projects = () => {
       <div
         style={{
           border: "solid white",
+          width: "100%",
           display: "flex",
           flexWrap: "wrap",
-          gap: "15px",
-          justifyContent: "space-evenly",
           padding: "15px",
+          //margin: "30px",
+          //display: "grid",
+          //gridTemplateColumns: "repeat(2,minmax(350px,1fr))",
+          justifyContent: "space-evenly",
+          //placeContent: "center",
         }}
       >
         {proyectos.map((element) => {
