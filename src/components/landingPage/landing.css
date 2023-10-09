@@ -85,12 +85,11 @@
     }
 }
 
-
 /* PROJECT*/
 .conteiner-card{
     max-width: 540px;
     background: transparent;
-    margin: 55px;
+    margin: 20px;
     backdrop-filter: blur(15px);
     color: white;
     border-radius: 10px;
@@ -112,7 +111,6 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    
 }
 .icon{
     transition: 0.3s;
@@ -120,5 +118,17 @@
 }
 .icon:hover{
     transform: scale(1.1);
+
+}
+.title-project{
+    margin: 50px 0 0 0;
+    font-family: 'Londrina Sketch', cursive;
+    color: rgb(255, 124, 0) ;
+    font-size: 80px;
+}
+@media screen and (max-width:500px) {
+    .title-project{
+        font-size: 50px;
+    }
 
 }

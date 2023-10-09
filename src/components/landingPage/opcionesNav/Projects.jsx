@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Button from "@mui/material/Button";
+import "../landing.css";
 
 const Projects = () => {
   const proyectos = [
@@ -40,92 +40,135 @@ const Projects = () => {
         gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
       },
     },
+    {
+      id: "6521f3b6f41c57ebd5b01794",
+      title: "FOOD",
+      description:
+        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
+      video: "../../../../image/iconos-vision.jpg",
+      links: {
+        depoly: "https://food-pi.up.railway.app/",
+        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
+        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
+      },
+    },
+    {
+      id: "6521f3b6f41c57ebd5b01794",
+      title: "FOOD",
+      description:
+        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
+      video: "../../../../image/iconos-vision.jpg",
+      links: {
+        depoly: "https://food-pi.up.railway.app/",
+        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
+        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
+      },
+    },
   ];
+
   return (
     <div
       style={{
-        border: "solid red",
         display: "flex",
         flexDirection: "column",
         flexWrap: "wrap",
         padding: "10px",
         justifyContent: "space-evenly",
         alignItems: "center",
+        border: "solid white",
       }}
     >
-      <h1 className="h4-landing">MIS PROYECTOS</h1>
+      <h1 className="title-project">PROYECTOS</h1>
       <div
-        class="card mb-3"
-        className="conteiner-card"
-        style={{ maxWidth: "540px", margin: "15px" }}
+        style={{
+          width: "100%",
+          height: "auto",
+          display: "flex",
+          flexWrap: "wrap",
+          padding: "15px",
+          justifyContent: "space-evenly",
+        }}
       >
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="../../../../image/clothes.jpg"
-              style={{
-                width: "100%",
-                height: "100%",
-                borderRadius: "10px 0px 0px 10px",
-              }}
-              alt="production"
-            />
-          </div>
-          <div
-            class="col-md-8"
-            style={{ padding: "10px", border: "solid transparent" }}
-          >
-            <div class="card-body">
-              <h5
-                class="card-title"
-                style={{ color: "white", margin: "2px 0 10px auto" }}
-              >
-                ONLINE STORE
-              </h5>
-              <p class="card-text">
-                Esta página es un ecommers, en esta tienda virtual puedes
-                encontrar las mejores prendas que estan de moda y a los mejores
-                precios.
-              </p>
-              <div class="card-text" className="icon-link-project">
-                <a
-                  href="https://github.com/ETorresSacha/STORE-ONLINE-FRONT"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon"
+        <div class="card mb-3" className="conteiner-card">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../../../../image/clothes.jpg"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "10px 0px 0px 0px",
+                }}
+                alt="production"
+              />
+            </div>
+            <div
+              class="col-md-8"
+              style={{ padding: "10px", border: "solid transparent" }}
+            >
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style={{
+                    color: "white",
+                    margin: "2px 0 10px auto",
+                    fontFamily: "Arial, Helvetica, sans-serif",
+                  }}
                 >
-                  <GitHubIcon
-                    style={{
-                      color: "black",
-                      borderRadius: "50% ",
-                      background: "white",
-                    }}
-                  />
-                </a>
+                  ONLINE STORE
+                </h5>
+                <p class="card-text">
+                  Esta página es un ecommers, en esta tienda virtual puedes
+                  encontrar las mejores prendas que estan de moda y a los
+                  mejores precios.
+                </p>
+                <div class="card-text" className="icon-link-project">
+                  <a
+                    href="https://github.com/ETorresSacha/STORE-ONLINE-FRONT"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon"
+                  >
+                    <GitHubIcon
+                      style={{
+                        color: "black",
+                        borderRadius: "50% ",
+                        background: "white",
+                      }}
+                    />
+                  </a>
 
-                <a href="" target="_blank" rel="noreferrer">
-                  <button type="button" class="btn btn-outline-primary">
-                    Ver la página
-                  </button>
-                </a>
+                  <a href="" target="_blank" rel="noreferrer">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
+                    >
+                      Ver la página
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
+            <div
+              style={{
+                width: "100%",
+                height: "35px",
+                background: "red",
+                backdroFilter: "blur(10px)",
+                borderRadius: "0px 0px 10px 10px",
+                textAlign: "center",
+                fontFamily: "Lucida Sans', 'Lucida Sans Regular",
+              }}
+            >
+              <h4 style={{ margin: "2px" }}>En desarrollo</h4>
+            </div>
           </div>
-        </div>
-        <div
-          style={{
-            width: "100%",
-            background: "grey",
-            backdroFilter: "blur(10px)",
-          }}
-        >
-          En desarrollo
         </div>
       </div>
 
       <div
         style={{
-          border: "solid white",
           width: "100%",
           display: "flex",
           flexWrap: "wrap",
@@ -155,7 +198,11 @@ const Projects = () => {
                   <div class="card-body">
                     <h5
                       class="card-title"
-                      style={{ color: "white", margin: "2px 0 10px auto" }}
+                      style={{
+                        color: "white",
+                        margin: "2px 0 10px auto",
+                        fontFamily: "Arial, Helvetica, sans-serif",
+                      }}
                     >
                       {element.title}
                     </h5>
@@ -198,7 +245,11 @@ const Projects = () => {
                         rel="noreferrer"
                         className="icon"
                       >
-                        <button type="button" class="btn btn-outline-primary">
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary"
+                          style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
+                        >
                           Ver la página
                         </button>
                       </a>

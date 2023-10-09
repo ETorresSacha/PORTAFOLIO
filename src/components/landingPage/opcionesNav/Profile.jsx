@@ -39,7 +39,7 @@ const Profile = () => {
     <div className="conteiner-profile">
       <div className="text-profile">
         <h1> ¡Sobre mí!</h1>
-        <h4 className="h4-landing">
+        <h4>
           <p>
             Soy desarrollador web, como Full Stack; mi prioridad es la
             interacción y la buena experiencia del usuario.

@@ -114,7 +114,10 @@ const LandingPage = () => {
         <Projects />
       </section>
 
-      <section ref={Perfil} style={{ width: "100%", height: "100vh" }}>
+      <section
+        ref={Perfil}
+        style={{ width: "100%", height: "100vh", border: "solid green" }}
+      >
         <Profile />
       </section>
 
