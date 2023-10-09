@@ -116,7 +116,13 @@ const LandingPage = () => {
 
       <section
         ref={Perfil}
-        style={{ width: "100%", height: "100vh", border: "solid green" }}
+        style={{
+          width: "100%",
+          height: "100vh",
+          border: "solid green",
+          background:
+            "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
+        }}
       >
         <Profile />
       </section>
@@ -125,7 +131,7 @@ const LandingPage = () => {
         ref={Contáctame}
         style={{
           width: "100%",
-          height: "100vh",
+          height: "auto",
           background:
             "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
         }}

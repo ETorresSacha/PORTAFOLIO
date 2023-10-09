@@ -41,7 +41,7 @@ const Profile = () => {
         <h1 className="title-profile"> ¡Sobre mí!</h1>
       </div>
 
-      <div>
+      <div className="conteine-skill">
         <div className="text-profile">
           <h4>
             <p>
@@ -56,16 +56,7 @@ const Profile = () => {
             </p>
           </h4>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-          }}
-        >
+        <div className="skill">
           <h1>skills</h1>
           <div
             style={{
@@ -91,8 +82,11 @@ const Profile = () => {
           <div
             style={{
               display: "flex",
+              flexWrap: "wrap",
               width: "100%",
               justifyContent: "center",
+              border: "solid green",
+              justifyContent: "space-evenly",
             }}
           >
             {skills.map((element, index) => {
@@ -101,10 +95,10 @@ const Profile = () => {
                   key={index}
                   style={{
                     display: "flex",
-                    flexWrap: "wrap",
                     flexDirection: "column",
-                    width: "100%",
-                    justifyContent: "center",
+                    width: "350px",
+                    justifyContent: "space-evenly",
+                    border: "solid white",
                   }}
                 >
                   <h1

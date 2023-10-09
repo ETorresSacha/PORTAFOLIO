@@ -22,7 +22,7 @@ const Contact = () => {
         //background: "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
       }}
     >
-      <img src="../../../../image/portada.png" />
+      <img src="" />
       <div
         style={{
           display: "flex",
