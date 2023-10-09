@@ -96,6 +96,7 @@
     transition: 0.3s;
     border: solid transparent;
     box-shadow: 0 0 10px #898a8ac4, 0 0 10px #898a8ac4, 0 0 10px #898a8ac4; 
+
 }
 
 .conteiner-card:hover{
@@ -125,10 +126,31 @@
     font-family: 'Londrina Sketch', cursive;
     color: rgb(255, 124, 0) ;
     font-size: 80px;
+    padding: 0px 0px 0px 125px;
 }
 @media screen and (max-width:500px) {
     .title-project{
         font-size: 50px;
+        display: flex;
+        justify-content: "center";
     }
 
 }
+.conteiner-title{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+@media screen and (max-width:1235px) {
+    .title-project{
+        padding: 0px 0px 0px 0px;
+    }
+    .conteiner-title{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+
+}
+
+

@@ -75,10 +75,12 @@ const Projects = () => {
         padding: "10px",
         justifyContent: "space-evenly",
         alignItems: "center",
-        border: "solid white",
       }}
     >
-      <h1 className="title-project">PROYECTOS</h1>
+      <div className="conteiner-title">
+        <h1 className="title-project">PROYECTOS</h1>
+      </div>
+
       <div
         style={{
           width: "100%",

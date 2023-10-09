@@ -37,106 +37,111 @@ const Profile = () => {
   ];
   return (
     <div className="conteiner-profile">
-      <div className="text-profile">
-        <h1> ¡Sobre mí!</h1>
-        <h4>
-          <p>
-            Soy desarrollador web, como Full Stack; mi prioridad es la
-            interacción y la buena experiencia del usuario.
-          </p>
-          <p>
-            Tengo un background en Ingeniería Química, lo que me ha enseñado a
-            adaptarme al ritmo del trabajo, ser resiliente y la capacidad de
-            resolución de problemas. Estas habilidades me han ayudado a mejorar
-            como programador.
-          </p>
-        </h4>
+      <div className="conteiner-title-profile">
+        <h1 className="title-profile"> ¡Sobre mí!</h1>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
-        <h1>skills</h1>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "10px",
-            width: "100%",
-            justifyContent: "center",
-          }}
-        >
-          {plataformas.map((element, index) => {
-            return (
-              <img
-                key={index}
-                src={element}
-                height="40"
-                alt={`logo ${index}`}
-              />
-            );
-          })}
-        </div>
 
+      <div>
+        <div className="text-profile">
+          <h4>
+            <p>
+              Soy desarrollador web, como Full Stack; mi prioridad es la
+              interacción y la buena experiencia del usuario.
+            </p>
+            <p>
+              Tengo un background en Ingeniería Química, lo que me ha enseñado a
+              adaptarme al ritmo del trabajo, ser resiliente y la capacidad de
+              resolución de problemas. Estas habilidades me han ayudado a
+              mejorar como programador.
+            </p>
+          </h4>
+        </div>
         <div
           style={{
             display: "flex",
-            width: "100%",
+            flexDirection: "column",
+            flexWrap: "wrap",
             justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
           }}
         >
-          {skills.map((element, index) => {
-            return (
-              <div
-                key={index}
-                style={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  flexDirection: "column",
-                  width: "100%",
-                  justifyContent: "center",
-                }}
-              >
-                <h1
+          <h1>skills</h1>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "10px",
+              width: "100%",
+              justifyContent: "center",
+            }}
+          >
+            {plataformas.map((element, index) => {
+              return (
+                <img
+                  key={index}
+                  src={element}
+                  height="40"
+                  alt={`logo ${index}`}
+                />
+              );
+            })}
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "center",
+            }}
+          >
+            {skills.map((element, index) => {
+              return (
+                <div
+                  key={index}
                   style={{
                     display: "flex",
+                    flexWrap: "wrap",
+                    flexDirection: "column",
                     width: "100%",
                     justifyContent: "center",
                   }}
                 >
-                  {element.tecnologia}
-                </h1>
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "8px",
-                    justifyContent: "center",
-                  }}
-                >
-                  {element.logos.map((ele, index) => {
-                    return (
-                      <img
-                        style={{
-                          display: "flex",
-                        }}
-                        key={index}
-                        src={ele}
-                        height="40"
-                        alt={`logo ${index}`}
-                      />
-                    );
-                  })}
+                  <h1
+                    style={{
+                      display: "flex",
+                      width: "100%",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {element.tecnologia}
+                  </h1>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: "8px",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {element.logos.map((ele, index) => {
+                      return (
+                        <img
+                          style={{
+                            display: "flex",
+                          }}
+                          key={index}
+                          src={ele}
+                          height="40"
+                          alt={`logo ${index}`}
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
