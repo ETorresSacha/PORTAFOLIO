@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { blue } from "@mui/material/colors";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import "./contact.css";
 
 const Contact = () => {
   const ColorButton = styled(Button)(({ theme }) => ({
@@ -14,16 +15,12 @@ const Contact = () => {
     },
   }));
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        //background: "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
-      }}
-    >
-      <img src="" />
-      <div
+    <div className="conteiner">
+      <div className="conteiner-title">
+        <h1 className="title"> Contacto</h1>
+      </div>
+
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -74,7 +71,7 @@ const Contact = () => {
           </ColorButton>
         </div>
         <WhatsAppIcon style={{ color: "green", position: "absolute" }} />
-      </div>
+      </div> */}
     </div>
   );
 };

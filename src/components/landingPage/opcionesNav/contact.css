@@ -1,0 +1,25 @@
+.conteiner-contact{
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    
+}
+.conteiner-title-contact{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+.title-contac{
+   
+    font-family: 'Londrina Sketch', cursive;
+    color: rgb(255, 124, 0) ;
+    font-size: 80px;
+    padding: 0px 0px 0px 125px;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -28,69 +28,15 @@ const Projects = () => {
         gitHub: "https://github.com/ETorresSacha/skillHub-front",
       },
     },
-    {
-      id: "6521f3b6f41c57ebd5b01794",
-      title: "FOOD",
-      description:
-        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
-      video: "../../../../image/iconos-vision.jpg",
-      links: {
-        depoly: "https://food-pi.up.railway.app/",
-        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
-        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
-      },
-    },
-    {
-      id: "6521f3b6f41c57ebd5b01794",
-      title: "FOOD",
-      description:
-        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
-      video: "../../../../image/iconos-vision.jpg",
-      links: {
-        depoly: "https://food-pi.up.railway.app/",
-        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
-        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
-      },
-    },
-    {
-      id: "6521f3b6f41c57ebd5b01794",
-      title: "FOOD",
-      description:
-        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
-      video: "../../../../image/iconos-vision.jpg",
-      links: {
-        depoly: "https://food-pi.up.railway.app/",
-        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
-        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
-      },
-    },
   ];
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "wrap",
-        padding: "10px",
-        justifyContent: "space-evenly",
-        alignItems: "center",
-      }}
-    >
+    <div className="conteiner">
       <div className="conteiner-title">
-        <h1 className="title-project">Proyectos</h1>
+        <h1 className="title">Proyectos</h1>
       </div>
 
-      <div
-        style={{
-          width: "100%",
-          height: "auto",
-          display: "flex",
-          flexWrap: "wrap",
-          padding: "15px",
-          justifyContent: "space-evenly",
-        }}
-      >
+      <div className="conteiner-first">
         <div class="card mb-3" className="conteiner-card">
           <div class="row g-0">
             <div class="col-md-4">
@@ -169,15 +115,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          flexWrap: "wrap",
-          padding: "15px",
-          justifyContent: "space-evenly",
-        }}
-      >
+      <div className="conteiner-second">
         {proyectos.map((element) => {
           return (
             <div key={element.id} class="card mb-3" className="conteiner-card">

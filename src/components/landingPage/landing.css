@@ -86,6 +86,45 @@
 }
 
 /* PROJECT*/
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    border: solid white
+
+}
+
+.conteiner-title{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    border: solid red;
+}
+
+.conteiner-first{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-evenly;
+    border: solid green;
+
+}
+
+.conteiner-second{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-evenly;
+    border: solid blue;
+
+}
+/*************************************************/
 .conteiner-card{
     max-width: 540px;
     background: transparent;
@@ -121,7 +160,7 @@
     transform: scale(1.1);
 
 }
-.title-project{
+.title{
     margin: 50px 0 0 0;
     font-family: 'Londrina Sketch', cursive;
     color: rgb(255, 124, 0) ;
@@ -129,20 +168,16 @@
     padding: 0px 0px 0px 125px;
 }
 @media screen and (max-width:500px) {
-    .title-project{
+    .title{
         font-size: 50px;
         display: flex;
         justify-content: "center";
     }
 
 }
-.conteiner-title{
-    width: 100%;
-    display: flex;
-    justify-content:flex-start;
-}
+
 @media screen and (max-width:1235px) {
-    .title-project{
+    .title{
         padding: 0px 0px 0px 0px;
     }
     .conteiner-title{

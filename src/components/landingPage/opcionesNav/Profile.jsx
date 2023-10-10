@@ -35,33 +35,32 @@ const Profile = () => {
     },
   ];
   return (
-    <div className="conteiner-profile">
-      <div className="conteiner-title-profile">
-        <h1 className="title-profile"> ¡Sobre mí!</h1>
+    <div style={{ gap: "12px" }} className="conteiner">
+      <div className="conteiner-title">
+        <h1 className="title"> ¡Sobre mí!</h1>
+      </div>
+      <div className="conteiner-first">
+        <div className="text-profile">
+          <span
+            style={{
+              padding: "15px 0 0px 0",
+            }}
+          >
+            <p>
+              Soy desarrollador web Full Stack; mi prioridad es la interacción y
+              la buena experiencia del usuario.
+            </p>
+            <p>
+              Tengo un background en Ingeniería Química, lo que me ha enseñado a
+              adaptarme al ritmo del trabajo, ser resiliente y la capacidad de
+              resolución de problemas. Estas habilidades me han ayudado aprender
+              y mejorar en este mundo de la tecnología.
+            </p>
+          </span>
+        </div>
       </div>
 
-      <div className="conteiner-skill">
-        <div className="conteiner-text-profile">
-          <div className="text-profile">
-            <span
-              style={{
-                padding: "15px 0 0px 0",
-              }}
-            >
-              <p>
-                Soy desarrollador web Full Stack; mi prioridad es la interacción
-                y la buena experiencia del usuario.
-              </p>
-              <p>
-                Tengo un background en Ingeniería Química, lo que me ha enseñado
-                a adaptarme al ritmo del trabajo, ser resiliente y la capacidad
-                de resolución de problemas. Estas habilidades me han ayudado
-                aprender y mejorar en este mundo de la tecnología.
-              </p>
-            </span>
-          </div>
-        </div>
-
+      <div style={{ margin: "0px 0px 20px  0px" }} className="conteiner-second">
         <div className="skill">
           <h1
             style={{

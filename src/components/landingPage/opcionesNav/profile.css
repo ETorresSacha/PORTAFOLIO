@@ -1,12 +1,14 @@
 .conteiner-profile{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    gap: 30px;
+    flex-direction: column;
+    /* width: 100%;
+    height: 100vh; */
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     color: white;
+    border: solid red;
+    padding: 10px;
     
 }
 
@@ -14,10 +16,11 @@
     width: 100%;
     display: flex;
     justify-content:flex-start;
+    border: solid green
 
 }
 
-.title-profile{
+/* .title-profile{
     margin: 70px 0 0 0;
     font-family: 'Londrina Sketch', cursive;
     color: rgb(255, 124, 0) ;
@@ -25,10 +28,10 @@
     padding: 0px 0px 0px 125px;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .title-profile{
         font-size: 60px;
     }
@@ -37,22 +40,29 @@
     .title-profile{
         margin: 50px 0 0 0;
     }
-}
+} */
 
-.conteiner-skill{
+/* .conteiner-skill{
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap:wrap;
-    gap: 30px;
+    gap: 50px;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 0 70px 0px;
-}
-.conteiner-text-profile{
+    border: solid orange;
+} */
+/* .conteiner-text-profile{
     display: flex;
     width: 100%;
-}
+    border: solid blue;
+} */
+
+/* #conteiner-first-style{
+    margin: 200px 0 0 0;
+
+} */
 .text-profile{
     display: flex;
     justify-content: center;
@@ -61,9 +71,10 @@
     border: solid white;
     border-radius: 20px;
     padding: 15px;
-    margin: 0 0 0 120px;
-    font-size: 100px;
     font-size:16px;
+    color: white;
+    position: relative;
+    right: 180px;
 }
 
 .skill{
@@ -79,18 +90,15 @@
     .conteiner-profile{
         gap: 20px;
     }
-    .title-profile{
+    /* .title-profile{
         padding: 0px 0px 0px 0px;
-    }
-    .conteiner-title-profile{
-        width: 100%;
-        display: flex;
-        justify-content:center;
-    }
+    } */
     .text-profile{
         display: flex;
         justify-content: center;
-        margin: 20px
+        position: relative;
+    right: 0px;
+  
 
     }
     .conteiner-text-profile{
