@@ -78,7 +78,7 @@ const Projects = () => {
       }}
     >
       <div className="conteiner-title">
-        <h1 className="title-project">PROYECTOS</h1>
+        <h1 className="title-project">Proyectos</h1>
       </div>
 
       <div
