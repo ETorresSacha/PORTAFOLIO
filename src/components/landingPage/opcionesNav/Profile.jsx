@@ -6,7 +6,6 @@ const Profile = () => {
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   ];
   const skills = [
     {
@@ -41,28 +40,42 @@ const Profile = () => {
         <h1 className="title-profile"> ¡Sobre mí!</h1>
       </div>
 
-      <div className="conteine-skill">
-        <div className="text-profile">
-          <h4>
-            <p>
-              Soy desarrollador web, como Full Stack; mi prioridad es la
-              interacción y la buena experiencia del usuario.
-            </p>
-            <p>
-              Tengo un background en Ingeniería Química, lo que me ha enseñado a
-              adaptarme al ritmo del trabajo, ser resiliente y la capacidad de
-              resolución de problemas. Estas habilidades me han ayudado a
-              mejorar como programador.
-            </p>
-          </h4>
+      <div className="conteiner-skill">
+        <div className="conteiner-text-profile">
+          <div className="text-profile">
+            <span
+              style={{
+                padding: "15px 0 0px 0",
+              }}
+            >
+              <p>
+                Soy desarrollador web Full Stack; mi prioridad es la interacción
+                y la buena experiencia del usuario.
+              </p>
+              <p>
+                Tengo un background en Ingeniería Química, lo que me ha enseñado
+                a adaptarme al ritmo del trabajo, ser resiliente y la capacidad
+                de resolución de problemas. Estas habilidades me han ayudado
+                aprender y mejorar en este mundo de la tecnología.
+              </p>
+            </span>
+          </div>
         </div>
+
         <div className="skill">
-          <h1>skills</h1>
+          <h1
+            style={{
+              fontFamily: "Arial, Helvetica, sans-serif",
+              fontSize: "35px",
+            }}
+          >
+            SKILLS
+          </h1>
           <div
             style={{
               display: "flex",
               flexWrap: "wrap",
-              gap: "10px",
+              gap: "20px",
               width: "100%",
               justifyContent: "center",
             }}
@@ -85,7 +98,7 @@ const Profile = () => {
               flexWrap: "wrap",
               width: "100%",
               justifyContent: "center",
-              border: "solid green",
+              gap: "20px",
               justifyContent: "space-evenly",
             }}
           >
@@ -99,6 +112,8 @@ const Profile = () => {
                     width: "350px",
                     justifyContent: "space-evenly",
                     border: "solid white",
+                    borderRadius: "10px",
+                    padding: "10px",
                   }}
                 >
                   <h1
@@ -106,6 +121,8 @@ const Profile = () => {
                       display: "flex",
                       width: "100%",
                       justifyContent: "center",
+                      fontFamily: "Arial, Helvetica, sans-serif",
+                      fontSize: "25px",
                     }}
                   >
                     {element.tecnologia}

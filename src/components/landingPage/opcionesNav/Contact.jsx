@@ -41,9 +41,6 @@ const Contact = () => {
             justifyContent: "center",
             alignItems: "center",
             borderRadius: "20px",
-
-            position: "relative",
-            top: "-45px",
           }}
         >
           <h1>CONTACTO</h1>
