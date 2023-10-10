@@ -1,8 +1,6 @@
 .conteiner-nav{
     background: transparent;
-
     box-shadow: 2px 2px 1px #2a2c2c9b, 0 0 10px #2a2c2c9b, 0 0 10px #2a2c2c9b;
-  
     width: 100%;
     display: flex;
     padding: 5px;

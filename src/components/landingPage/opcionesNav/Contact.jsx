@@ -4,6 +4,8 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { blue } from "@mui/material/colors";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import PersonIcon from "@mui/icons-material/Person";
+import EmailIcon from "@mui/icons-material/Email";
 import "./contact.css";
 
 const Contact = () => {
@@ -19,50 +21,63 @@ const Contact = () => {
       <div className="conteiner-title">
         <h1 className="title"> Contacto</h1>
       </div>
-
-      {/* <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          padding: "20px",
-          margin: "5px",
-        }}
-      >
-        <div
-          style={{
-            background: "white",
-            boxShadow: "3px 1px 10px ",
-            display: "flex",
-            flexDirection: "column",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "20px",
-          }}
-        >
-          <h1>CONTACTO</h1>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2,minmax(150px,1fr))",
-              gridGap: "10px",
-              gridAutoRows: "minmax(80px, auto)",
-              margin: "15px",
-            }}
-          >
-            <TextField id="outlined-basic" label="Nombre" variant="outlined" />
-
-            <TextField id="outlined-basic" label="Correo" variant="outlined" />
+      <div className="conteiner-first">
+        <div className="box">
+          <div className="box-inputs">
+            <div className="icon-input">
+              <PersonIcon
+                sx={{
+                  color: "black",
+                  borderRadius: "50%",
+                  background: "white",
+                  margin: "10px",
+                }}
+              />
+              <TextField
+                sx={{
+                  width: "100%",
+                  border: "red",
+                  margin: "10px",
+                  color: "white",
+                  borderRadius: " 3px",
+                }}
+                id="outlined-basic"
+                label="Nombre"
+                variant="outlined"
+              />
+            </div>
+            <div className="icon-input">
+              <EmailIcon
+                sx={{
+                  color: "black",
+                  borderRadius: "50%",
+                  background: "white",
+                  margin: "10px",
+                }}
+              />
+              <TextField
+                sx={{
+                  width: "100%",
+                  border: "red",
+                  margin: "10px",
+                  color: "white",
+                  borderRadius: " 3px",
+                }}
+                id="outlined-basic"
+                label="Correo"
+                variant="outlined"
+              />
+            </div>
+            <TextField
+              sx={{ width: "100%", border: "red" }}
+              id="outlined-multiline-flexible"
+              label="Mensaje"
+              multiline
+              rows={4}
+              column={2}
+            />
           </div>
 
-          <TextField
-            sx={{ width: "90%", border: "red" }}
-            id="outlined-multiline-flexible"
-            label="Mensaje"
-            multiline
-            rows={4}
-            column={2}
-          />
           <ColorButton
             sx={{ width: "90%", padding: "15px", margin: "15px" }}
             variant="contained"
@@ -70,8 +85,21 @@ const Contact = () => {
             Enviar
           </ColorButton>
         </div>
+      </div>
+      <div className="conteiner-second"></div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          padding: "20px",
+          margin: "5px",
+        }}
+      >
         <WhatsAppIcon style={{ color: "green", position: "absolute" }} />
-      </div> */}
+      </div>
+      <button class="button  email">me@email.com</button>
+      <button class="button  phone">tel: 1234 567 890</button>
     </div>
   );
 };

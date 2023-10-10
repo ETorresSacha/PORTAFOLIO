@@ -132,7 +132,7 @@ const LandingPage = () => {
         style={{
           width: "100%",
           height: "100vh",
-          border: "solid white",
+          justifyContent: "center",
           background:
             "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
         }}
