@@ -97,8 +97,7 @@ const Profile = () => {
               flexWrap: "wrap",
               width: "100%",
               justifyContent: "center",
-              gap: "20px",
-              justifyContent: "space-evenly",
+              gap: "27px",
             }}
           >
             {skills.map((element, index) => {
