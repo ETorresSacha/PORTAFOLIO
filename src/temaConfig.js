@@ -1,13 +1,13 @@
 import { createTheme } from '@mui/material/styles';
-import { pink } from '@mui/material/colors';
+import { orange } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: pink[300],
+      main: orange[700],
     },
     secondary: {
-      main: pink[800],
+      main: orange[800],
     },
   },
 });

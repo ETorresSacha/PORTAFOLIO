@@ -2,18 +2,18 @@ import React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import { blue } from "@mui/material/colors";
+import { orange } from "@mui/material/colors";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import PersonIcon from "@mui/icons-material/Person";
-import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import "./contact.css";
 
 const Contact = () => {
   const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(blue[500]),
-    backgroundColor: blue[500],
+    color: theme.palette.getContrastText(orange[800]),
+    backgroundColor: orange[800],
     "&:hover": {
-      backgroundColor: blue[700],
+      backgroundColor: orange[500],
     },
   }));
   return (
@@ -22,84 +22,84 @@ const Contact = () => {
         <h1 className="title"> Contacto</h1>
       </div>
       <div className="conteiner-first">
-        <div className="box">
-          <div className="box-inputs">
-            <div className="icon-input">
-              <PersonIcon
-                sx={{
-                  color: "black",
-                  borderRadius: "50%",
-                  background: "white",
-                  margin: "10px",
+        <div className="conteiner-box">
+          <div className="contact">
+            <button class="button  email">eriktorressacha@email.com</button>
+            <button class="button  phone">Cel:(+51) 964626322</button>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <WhatsAppIcon
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  color: "white",
+                  background: "green",
+                  borderRadius: "10px",
                 }}
               />
+              <LinkedInIcon
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  color: "white",
+                  background: "blue",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+          </div>
+          <div className="box">
+            <div className="box-inputs">
               <TextField
                 sx={{
                   width: "100%",
                   border: "red",
-                  margin: "10px",
-                  color: "white",
                   borderRadius: " 3px",
                 }}
                 id="outlined-basic"
                 label="Nombre"
                 variant="outlined"
               />
-            </div>
-            <div className="icon-input">
-              <EmailIcon
-                sx={{
-                  color: "black",
-                  borderRadius: "50%",
-                  background: "white",
-                  margin: "10px",
-                }}
-              />
               <TextField
                 sx={{
                   width: "100%",
                   border: "red",
-                  margin: "10px",
-                  color: "white",
+                  color: "black",
                   borderRadius: " 3px",
                 }}
                 id="outlined-basic"
                 label="Correo"
                 variant="outlined"
               />
-            </div>
-            <TextField
-              sx={{ width: "100%", border: "red" }}
-              id="outlined-multiline-flexible"
-              label="Mensaje"
-              multiline
-              rows={4}
-              column={2}
-            />
-          </div>
 
-          <ColorButton
-            sx={{ width: "90%", padding: "15px", margin: "15px" }}
-            variant="contained"
-          >
-            Enviar
-          </ColorButton>
+              <TextField
+                sx={{
+                  width: "100%",
+                }}
+                id="outlined-multiline-flexible"
+                label="Mensaje"
+                multiline
+                rows={4}
+                column={2}
+              />
+              <ColorButton
+                sx={{
+                  width: "100%",
+                  padding: "15px",
+                  fontfamily: "Arial, Helvetica, sans-serif",
+                }}
+                variant="contained"
+              >
+                Enviar
+              </ColorButton>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="conteiner-second"></div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          padding: "20px",
-          margin: "5px",
-        }}
-      >
-        <WhatsAppIcon style={{ color: "green", position: "absolute" }} />
-      </div>
-      <button class="button  email">me@email.com</button>
-      <button class="button  phone">tel: 1234 567 890</button>
     </div>
   );
 };

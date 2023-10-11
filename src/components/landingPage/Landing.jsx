@@ -15,6 +15,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Projects from "./opcionesNav/Projects";
 import Profile from "./opcionesNav/Profile";
 import Contact from "./opcionesNav/Contact";
+
 const LandingPage = () => {
   const navigate = useNavigate();
   const Inicio = useRef();
@@ -131,7 +132,7 @@ const LandingPage = () => {
         ref={Contáctame}
         style={{
           width: "100%",
-          height: "100vh",
+          height: "auto",
           justifyContent: "center",
           background:
             "linear-gradient(180.2deg,rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%)",
