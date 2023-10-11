@@ -1,4 +1,5 @@
 import React from "react";
+import "../landingPage/landing.css";
 import "./profile.css";
 
 const Profile = () => {
@@ -73,22 +74,35 @@ const Profile = () => {
           <div
             style={{
               display: "flex",
-              flexWrap: "wrap",
+              flexDirection: "row",
               gap: "20px",
               width: "100%",
               justifyContent: "center",
             }}
           >
-            {plataformas.map((element, index) => {
-              return (
-                <img
-                  key={index}
-                  src={element}
-                  height="40"
-                  alt={`logo ${index}`}
-                />
-              );
-            })}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "wrap",
+                width: "400px",
+                gap: "8px",
+                justifyContent: "center",
+                borderRadius: "10px",
+                padding: "10px",
+              }}
+            >
+              {plataformas.map((element, index) => {
+                return (
+                  <img
+                    style={{ width: "50px" }}
+                    key={index}
+                    src={element}
+                    alt={`logo ${index}`}
+                  />
+                );
+              })}
+            </div>
           </div>
 
           <div
@@ -107,7 +121,7 @@ const Profile = () => {
                   style={{
                     display: "flex",
                     flexDirection: "column",
-                    width: "350px",
+                    width: "400px",
                     justifyContent: "space-evenly",
                     border: "solid white",
                     borderRadius: "10px",
@@ -128,6 +142,7 @@ const Profile = () => {
                   <div
                     style={{
                       display: "flex",
+                      flexDirection: "row",
                       flexWrap: "wrap",
                       gap: "8px",
                       justifyContent: "center",
@@ -137,12 +152,12 @@ const Profile = () => {
                       return (
                         <img
                           style={{
-                            display: "flex",
+                            width: "60px",
                           }}
                           key={index}
                           src={ele}
-                          height="40"
-                          alt={`logo ${index}`}
+
+                          //alt={`logo ${index}`}
                         />
                       );
                     })}
