@@ -10,12 +10,10 @@ import { useRef } from "react";
 import Footer from "../footer/Footer";
 import { useNavigate } from "react-router-dom";
 import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
-
-import Projects from "./opcionesNav/Projects";
-import Profile from "./opcionesNav/Profile";
-import Contact from "./opcionesNav/Contact";
-import Cover from "../cover/Cover";
-import InicioHome from "./opcionesNav/Inicio";
+import Projects from "../projects/Projects";
+import Profile from "../profile/Profile";
+import Contact from "../contact/Contact";
+import HomeLandinge from "../home/HomeLanding";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -84,7 +82,7 @@ const LandingPage = () => {
       {/* Inicio */}
       <section ref={Inicio} className="conteiner-landing">
         <Nav optionNavigate={<OptionsNavigate optionsNav={optionsNav} />} />
-        <InicioHome />
+        <HomeLandinge />
       </section>
 
       {/* Opciones del nav */}

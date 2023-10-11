@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../nav/Nav";
-import InicioHome from "../landingPage/opcionesNav/Inicio";
+import InicioHome from "./HomeLanding";
 import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
 
 const Home = () => {

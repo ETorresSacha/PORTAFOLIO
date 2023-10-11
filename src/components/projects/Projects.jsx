@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import "../landing.css";
+import "../landingPage/landing.css";
 
 const Projects = () => {
   const proyectos = [

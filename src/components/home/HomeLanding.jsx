@@ -1,9 +1,9 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Cover from "../../cover/Cover";
+import Cover from "../cover/Cover";
 
-const InicioHome = () => {
+const HomeLanding = () => {
   return (
     <div className="conteiner-text">
       <Cover />
@@ -24,4 +24,4 @@ const InicioHome = () => {
   );
 };
 
-export default InicioHome;
+export default HomeLanding;
