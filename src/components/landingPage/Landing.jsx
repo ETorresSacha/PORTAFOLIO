@@ -10,11 +10,12 @@ import { useRef } from "react";
 import Footer from "../footer/Footer";
 import { useNavigate } from "react-router-dom";
 import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import Projects from "./opcionesNav/Projects";
 import Profile from "./opcionesNav/Profile";
 import Contact from "./opcionesNav/Contact";
+import Cover from "../cover/Cover";
+import InicioHome from "./opcionesNav/Inicio";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -83,21 +84,7 @@ const LandingPage = () => {
       {/* Inicio */}
       <section ref={Inicio} className="conteiner-landing">
         <Nav optionNavigate={<OptionsNavigate optionsNav={optionsNav} />} />
-        <div className="conteiner-text">
-          <h1 className="title-landing">¡Hola! Soy Erik</h1>
-          <h3 className="text-landing">Desarrollador web Full Stack</h3>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "25px",
-              color: "white",
-            }}
-          >
-            <GitHubIcon sx={{ width: "30px", height: "30px" }} />
-            <LinkedInIcon sx={{ width: "30px", height: "30px" }} />
-          </div>
-        </div>
+        <InicioHome />
       </section>
 
       {/* Opciones del nav */}
