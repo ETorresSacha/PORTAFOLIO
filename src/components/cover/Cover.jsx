@@ -20,6 +20,7 @@ const Cover = () => {
         loaded={particlesLoaded}
         options={optionsParticles}
       />
+      {/* <Introduccion /> */}
     </div>
   );
 };

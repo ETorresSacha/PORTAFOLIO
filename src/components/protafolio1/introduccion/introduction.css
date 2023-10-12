@@ -1,0 +1,69 @@
+.conteiner-introduccion{
+    padding: 20px;
+    display: "flex";
+    flex-direction: row;
+    justify-content: center;
+    border: solid green;
+
+}
+.conteiner-introduccion{
+    padding: 20px;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+.title-introduction{
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-size: 300%;
+    color:rgb(252, 242, 229);
+}
+.subtitle-introduction{
+    width:100%;
+    /* display: flex;
+    justify-content: center; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-size: 600%;
+    color:darkorange;
+    text-shadow: 2px 2px 1px rgb(255, 247, 247);
+    margin: 2px 0 15px 0;
+}
+.text-introduction{
+    width:100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:oblique;
+    font-size: 150%;
+    color:white;
+    margin: 2px 0 15px 0;
+}
+@media screen and (max-width:1050px) {
+
+
+    .title-introduction{
+        font-size: 200%;    
+    }
+    .subtitle-introduction{
+        font-size: 400%;
+    }
+    .conteiner-perfil{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:600px) {
+
+
+    .title-introduction{
+        font-size: 200%;   
+    }
+    .subtitle-introduction{
+        font-size: 300%;
+    }
+    .text-introduction{
+        font-size: 100%;
+    }
+}
