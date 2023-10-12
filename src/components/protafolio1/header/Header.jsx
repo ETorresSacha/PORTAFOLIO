@@ -23,7 +23,7 @@ const Header = () => {
               <span className="text-orange-600">Dev</span>
             </h1>
           </Link>
-          <div className="flex items-center justify-center gap-7 text-white">
+          <div className="flex items-center justify-center mx-2 gap-7 text-white">
             {redSocial.map(({ logo, src }) => (
               <Link
                 key={src}

@@ -1,18 +1,17 @@
 .conteiner-introduccion{
     padding: 20px;
-    display: "flex";
-    flex-direction: row;
+    margin: 50px;
+    display: flex;
+    width: 50%;
     justify-content: center;
-    border: solid green;
 
 }
-.conteiner-introduccion{
+.conteiner-perfil{
     padding: 20px;
     display: flex;
-    flex-wrap:wrap ;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 .title-introduction{
     width:100%;
@@ -23,8 +22,6 @@
 }
 .subtitle-introduction{
     width:100%;
-    /* display: flex;
-    justify-content: center; */
     font-family: 'Times New Roman', Times, serif;
     font-style:oblique;
     font-size: 600%;
@@ -41,8 +38,10 @@
     margin: 2px 0 15px 0;
 }
 @media screen and (max-width:1050px) {
-
-
+    .conteiner-introduccion{
+        width: auto;
+        height: 60%;
+    }
     .title-introduction{
         font-size: 200%;    
     }
@@ -52,11 +51,8 @@
     .conteiner-perfil{
         width: 100%;
     }
-
 }
 @media screen and (max-width:600px) {
-
-
     .title-introduction{
         font-size: 200%;   
     }

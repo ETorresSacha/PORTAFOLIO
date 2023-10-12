@@ -8,10 +8,10 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="conteiner-home">
-      {/* <Cover />
+      <Cover />
       <Header />
       <NavBar />
-      <Transitions /> */}
+      <Transitions />
       <Introduccion />
     </div>
   );
