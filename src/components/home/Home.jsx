@@ -4,6 +4,7 @@ import InicioHome from "./HomeLanding";
 import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
 import NavBar from "../protafolio1/navbar/NavBar";
+import Header from "../protafolio1/header/Header";
 
 const Home = () => {
   // Opciones del Nav
@@ -11,8 +12,7 @@ const Home = () => {
   return (
     <div>
       <section className="conteiner-landing">
-        <Nav optionNavigate={<OptionsNavigate optionsNav={optionsNav} />} />
-        {/* <InicioHome /> */}
+        <Header />
         <NavBar />
       </section>
     </div>
