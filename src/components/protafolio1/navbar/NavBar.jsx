@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  RiArrowDownDoubleFill,
-  RiHome4Line,
-  RiAccountPinCircleLine,
-  RiServerLine,
-  RiBriefcase2Line,
-  RiChatPollLine,
-} from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../utils/motionTrnsitions";
 import { dataNavbar } from "./NavBar.Data";
@@ -14,15 +6,11 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
-  const ruta = ""; // esta es la ruta para redirigir los iconos del nav
-  //   onClick={()=>navigate(`/home`)
   const location = useLocation();
 
-  console.log("Ubicación actual:", location.pathname);
-  console.log("Parámetros de búsqueda:", location.search);
   return (
     <motion.div
-      className=" fixed botton-0 z-20 flex-col items-center w-full mt-auto md:justify-ceter h-max md:top-1/4 md:right-10 md:w-16 md:h-screen text-white font-serif"
+      className="fixed bottom-0 z-20 flex flex-col items-center w-full mt-auto md:justify-center h-max md:top-1/4 md:right-10 md:w-16 md:h-screen text-white font-serif"
       variants={fadeIn("right", 0.5)}
       initial="hidden"
       animate="show"
@@ -38,11 +26,11 @@ const NavBar = () => {
                   path === location.pathname && "currentIconPage"
                 } group transition-all duration-300 `}
               >
-                <div className="absolute right-0 hidden mr-20 rounded-sm md:group-hover:flex md:group-hover:items-center">
+                <div className="absolute right-0 hidden mr-16 rounded-sm md:group-hover:flex md:group-hover:items-center">
                   <div className="relative flex items-center p-2 leading-none text-black capitalize bg-white rounded-sm">
                     {name}
                   </div>
-                  <div className="absolute border-l-8 border-r-0 border-solid border-l-white border-y-transparent border-y-4 right-2" />
+                  <div className="absolute border-l-8 border-r-0 border-solid border-l-white border-y-transparent border-y-4 -right-2" />
                 </div>
                 {icon}
               </Link>

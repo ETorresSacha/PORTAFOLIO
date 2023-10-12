@@ -1,11 +1,7 @@
-import {
-  RiArrowDownDoubleFill,
-  RiHome4Line,
-  RiAccountPinCircleLine,
-  RiServerLine,
-  RiBriefcase2Line,
-  RiChatPollLine,
-} from "react-icons/ri";
+import { RiHome4Line } from "react-icons/ri";
+import { BiSolidContact } from "react-icons/bi";
+import { BsPersonWorkspace } from "react-icons/bs";
+import { ImProfile } from "react-icons/im";
 
 export const dataNavbar = [
   {
@@ -14,23 +10,19 @@ export const dataNavbar = [
     icon: <RiHome4Line size="30" />,
   },
   {
-    name: "about",
-    path: "/about",
-    icon: <RiAccountPinCircleLine size="30" />,
+    name: "proyectos",
+    path: "/proyectos",
+    icon: <BsPersonWorkspace size="30" />,
+  },
+
+  {
+    name: "perfil",
+    path: "/perfil",
+    icon: <ImProfile size="30" />,
   },
   {
-    name: "services",
-    path: "/services",
-    icon: <RiServerLine size="30" />,
-  },
-  {
-    name: "work",
-    path: "/works",
-    icon: <RiBriefcase2Line size="30" />,
-  },
-  {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: <RiChatPollLine size="30" />,
+    name: "contactame",
+    path: "/contactame",
+    icon: <BiSolidContact size="30" />,
   },
 ];
