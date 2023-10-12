@@ -11,15 +11,13 @@ const Cover = () => {
 
   const particlesLoaded = useCallback(async (container) => {}, []);
   return (
-    <div>
-      <Particles
-        className="absolute w-full h-full translate-z-1"
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={optionsParticles}
-      />
-    </div>
+    <Particles
+      className="absolute w-full translate-z-1 border-amber-700"
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={optionsParticles}
+    />
   );
 };
 

@@ -5,20 +5,22 @@ import Cover from "../cover/Cover";
 
 const HomeLanding = () => {
   return (
-    <div className="conteiner-text">
+    <div>
       <Cover />
-      <h1 className="title-landing">¡Hola! Soy Erik</h1>
-      <h3 className="text-landing">Desarrollador web Full Stack</h3>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "25px",
-          color: "white",
-        }}
-      >
-        <GitHubIcon sx={{ width: "30px", height: "30px" }} />
-        <LinkedInIcon sx={{ width: "30px", height: "30px" }} />
+      <div className="border-white">
+        <h1 className="title-landing">¡Hola! Soy Erik</h1>
+        <h3 className="text-landing">Desarrollador web Full Stack</h3>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "25px",
+            color: "white",
+          }}
+        >
+          <GitHubIcon sx={{ width: "30px", height: "30px" }} />
+          <LinkedInIcon sx={{ width: "30px", height: "30px" }} />
+        </div>
       </div>
     </div>
   );
