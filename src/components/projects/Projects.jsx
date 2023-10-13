@@ -1,42 +1,19 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import "../landingPage/landing.css";
+import { proyectos } from "./dataProjects";
 
 const Projects = () => {
-  const proyectos = [
-    {
-      id: "6521f3b6f41c57ebd5b01794",
-      title: "FOOD",
-      description:
-        "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
-      video: "../../../../image/iconos-vision.jpg",
-      links: {
-        depoly: "https://food-pi.up.railway.app/",
-        youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
-        gitHub: "https://github.com/ETorresSacha/PI-FOOD-FRONT",
-      },
-    },
-    {
-      id: "6521f58ff41c57ebd5b01796",
-      title: "SKILL HUB",
-      description:
-        "En esta pagina puedes encontrar a las personas indicadas para que realicen los trabajos eventuales que necesitas en tu hogar, empresa o institución.",
-      video: "../../../../image/imagen-nosotros.jpg",
-      links: {
-        depoly: "https://skillhub-production.netlify.app/",
-        youtube: "https://www.youtube.com/watch?v=NhQ30hiDNr0",
-        gitHub: "https://github.com/ETorresSacha/skillHub-front",
-      },
-    },
-  ];
-
   return (
-    <div className="conteiner">
+    <div
+      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
+      className="conteiner"
+    >
       <div className="conteiner-title">
         <h1 className="title">Proyectos</h1>
       </div>
 
-      <div className="conteiner-first">
+      <div style={{ border: "solid white" }} className="conteiner-first">
         <div class="card mb-3" className="conteiner-card">
           <div class="row g-0">
             <div class="col-md-4">
@@ -115,7 +92,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="conteiner-second">
+      <div style={{ border: "solid red" }} className="conteiner-second">
         {proyectos.map((element) => {
           return (
             <div key={element.id} class="card mb-3" className="conteiner-card">

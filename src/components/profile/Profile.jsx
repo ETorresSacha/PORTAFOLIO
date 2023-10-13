@@ -36,7 +36,10 @@ const Profile = () => {
     },
   ];
   return (
-    <div style={{ gap: "12px" }} className="conteiner">
+    <div
+      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
+      className="conteiner"
+    >
       <div className="conteiner-title">
         <h1 className="title"> ¡Sobre mí!</h1>
       </div>

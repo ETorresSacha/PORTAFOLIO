@@ -17,12 +17,17 @@ const Contact = () => {
     },
   }));
   return (
-    <div className="conteiner">
+    <div
+      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
+      className="conteiner"
+    >
       <div className="conteiner-title">
-        <h1 className="title"> Contacto</h1>
+        <h1 style={{ border: "solid green" }} className="title">
+          Contacto
+        </h1>
       </div>
       <div className="conteiner-first">
-        <div className="conteiner-box">
+        <div style={{ padding: "10px" }} className="conteiner-box">
           <div className="contact">
             <button class="button  email">eriktorressacha@email.com</button>
             <button class="button  phone">Cel:(+51) 964626322</button>
