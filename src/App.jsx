@@ -11,10 +11,10 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
-import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
 import Profile from "./components/profile/Profile";
 import Contact from "./components/contact/Contact";
+import Home from "./components/protafolio1/rutasRendrizado/home/Home";
 
 function App() {
   return (

@@ -13,7 +13,7 @@ import OptionsNavigate from "../nav/opcionesNav/OptionsNavigate";
 import Projects from "../projects/Projects";
 import Profile from "../profile/Profile";
 import Contact from "../contact/Contact";
-import HomeLandinge from "../home/HomeLanding";
+import HomeLandinge from "./HomeLanding";
 
 const LandingPage = () => {
   const navigate = useNavigate();

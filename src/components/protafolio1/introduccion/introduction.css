@@ -4,6 +4,7 @@
     display: flex;
     width: 50%;
     justify-content: center;
+    align-items: center;
 
 }
 .conteiner-perfil{
@@ -19,6 +20,7 @@
     font-style:oblique;
     font-size: 300%;
     color:rgb(252, 242, 229);
+
 }
 .subtitle-introduction{
     width:100%;
@@ -31,11 +33,14 @@
 }
 .text-introduction{
     width:100%;
+    /* padding: 0 20px 0 20px; */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style:oblique;
-    font-size: 150%;
+    font-size: 100%;
     color:white;
     margin: 2px 0 15px 0;
+    letter-spacing: 0.1em; 
+    word-spacing: 0.2em;
 }
 @media screen and (max-width:1050px) {
     .conteiner-introduccion{
@@ -46,7 +51,7 @@
         font-size: 200%;    
     }
     .subtitle-introduction{
-        font-size: 400%;
+        font-size: 250%;
     }
     .conteiner-perfil{
         width: 100%;
@@ -58,6 +63,18 @@
     }
     .subtitle-introduction{
         font-size: 300%;
+    }
+    .text-introduction{
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .title-introduction{
+        font-size: 200%;   
+    }
+    .subtitle-introduction{
+        font-size: 200%;
     }
     .text-introduction{
         font-size: 100%;

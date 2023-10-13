@@ -6,7 +6,7 @@ import { redSocial } from "./DataHeader";
 
 const Header = () => {
   return (
-    <div className="absolute z-20 inline-block w-full top-5 md:top-10">
+    <div className="absolute z-20 inline-block w-full top-1 md:top-2">
       <motion.div
         variants={fadeIn("up", 0.5)}
         initial="hidden"

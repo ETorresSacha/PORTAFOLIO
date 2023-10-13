@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <motion.div
-      className="fixed bottom-0 z-20 flex flex-col items-center w-full mt-auto md:justify-center h-max md:top-1/4 md:right-10 md:w-16 md:h-screen text-white font-serif"
+      className="fixed bottom-0 z-20 flex flex-col items-center w-full mt-auto md:justify-center h-max md:top-1/4 md:right-10 md:w-10 md:h-screen text-white font-serif"
       variants={fadeIn("right", 0.5)}
       initial="hidden"
       animate="show"

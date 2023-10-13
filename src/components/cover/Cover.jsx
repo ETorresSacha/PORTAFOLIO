@@ -12,7 +12,7 @@ const Cover = () => {
 
   const particlesLoaded = useCallback(async (container) => {}, []);
   return (
-    <div>
+    <div style={{ border: "solid red" }}>
       <Particles
         className="absolute w-full translate-z-1 border-amber-700"
         id="tsparticles"
