@@ -40,12 +40,15 @@ const Projects = () => {
               </div>
               <div
                 class="col-md-8"
-                style={{ padding: "10px", border: "solid transparent" }}
+                style={{
+                  padding: "10px",
+                  border: "solid transparent",
+                  color: "white",
+                }}
               >
                 <div>
                   <h5
                     style={{
-                      color: "white",
                       margin: "2px 0 10px auto",
                       fontSize: "20px",
                       color: "aqua",
@@ -108,8 +111,7 @@ const Projects = () => {
             return (
               <div
                 key={element.id}
-                class="card mb-3"
-                className="conteiner-card"
+                className="conteiner-card card mb-3 text-slate-50"
               >
                 <div class="row g-0">
                   <div class="col-md-4">
@@ -124,7 +126,7 @@ const Projects = () => {
                     />
                   </div>
                   <div
-                    class="col-md-8"
+                    class="col-md-8 text-slate-50"
                     style={{ padding: "10px", border: "solid transparent" }}
                   >
                     <div class="card-body">
@@ -139,7 +141,7 @@ const Projects = () => {
                       >
                         {element.title}
                       </h5>
-                      <p>{element.description}</p>
+                      <p className="text-slate-50">{element.description}</p>
                       <p className="icon-link-project">
                         <a
                           href={element.links.gitHub}
