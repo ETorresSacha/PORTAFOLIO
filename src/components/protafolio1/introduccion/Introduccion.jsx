@@ -7,7 +7,6 @@ const Introduccion = () => {
   return (
     <div className="conteiner-introduccion">
       <motion.div
-        id="emboltura"
         variants={fadeIn("left", 0.5)}
         initial="hidden"
         animate="show"
@@ -20,27 +19,17 @@ const Introduccion = () => {
             Optimizo el rendimiento y proporciono soluciones personalizados que
             se adaptan a tus necesidades.
           </h4>
-          <div
-            id="botones"
-            // style={{
-            //   display: "flex",
-            //   flexWrap: "wrap",
-            //   justifyContent: "space-evenly",
-            // }}
-            className="flex flex-row justify-evenly flex-wrap items-center  md:gap-10 md:flex-row"
-          >
+          <div className="flex flex-row justify-evenly flex-wrap items-center  md:gap-10 md:flex-row">
             <a
-              id="boton1"
               style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}
-              href="/projects"
+              href="/proyectos"
               className="px-3 py-1 my-2 transition-all border-2 text-white cursor-pointer  rounded-xl hover:shadow-xl hover:shadow-white/50"
             >
               Ver proyectos
             </a>
             <a
-              id="boton2"
               style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}
-              href="/contact"
+              href="/contactame"
               className="px-3 py-1 my-2 transition-all border-2  cursor-pointer text-orange-500 border-orange-500 rounded-xl hover:shadow-xl hover:shadow-orange-500"
             >
               Contacta conmigo
