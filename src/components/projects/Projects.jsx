@@ -7,22 +7,25 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div
-      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
-      className="conteiner"
-    >
+    <div style={{ padding: " 50px 0 50px 0" }} className="conteiner">
       <motion.div
         id="emboltura"
         variants={fadeIn("left", 0.5)}
         initial="hidden"
         animate="show"
         exit="hidden"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          flexDirection: "row",
+          width: "100%",
+        }}
       >
         <div className="conteiner-title">
           <h1 className="title">Proyectos</h1>
         </div>
 
-        <div style={{ border: "solid white" }} className="conteiner-first">
+        <div className="conteiner-first">
           <div class="card mb-3" className="conteiner-card">
             <div class="row g-0">
               <div class="col-md-4">
@@ -101,7 +104,14 @@ const Projects = () => {
           </div>
         </div>
 
-        <div style={{ border: "solid red" }} className="conteiner-second">
+        <div
+          className="conteiner-second"
+          style={{
+            width: "100%",
+            display: "flex",
+            border: "solid red",
+          }}
+        >
           {proyectos.map((element) => {
             return (
               <div

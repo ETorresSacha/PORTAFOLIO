@@ -29,6 +29,12 @@ const Contact = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          flexDirection: "row",
+          width: "100%",
+        }}
       >
         <div className="conteiner-title">
           <h1 style={{ border: "solid green" }} className="title">

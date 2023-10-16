@@ -5,7 +5,7 @@ import Projects from "../../../projects/Projects";
 
 const RutaProyectos = () => {
   return (
-    <div style={{ border: "solid blue" }}>
+    <div>
       <Header />
       <NavBar />
       <Projects />

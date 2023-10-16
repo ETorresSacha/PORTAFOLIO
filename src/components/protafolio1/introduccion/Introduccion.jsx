@@ -22,12 +22,12 @@ const Introduccion = () => {
           </h4>
           <div
             id="botones"
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-evenly",
-            }}
-            //className="flex flex-row justify-center flex-wrap items-center  md:gap-10 md:flex-row"
+            // style={{
+            //   display: "flex",
+            //   flexWrap: "wrap",
+            //   justifyContent: "space-evenly",
+            // }}
+            className="flex flex-row justify-evenly flex-wrap items-center  md:gap-10 md:flex-row"
           >
             <a
               id="boton1"

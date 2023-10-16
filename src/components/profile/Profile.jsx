@@ -38,16 +38,18 @@ const Profile = () => {
     },
   ];
   return (
-    <div
-      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
-      className="conteiner"
-    >
+    <div style={{ padding: " 50px 0 50px 0" }} className="conteiner">
       <motion.div
-        id="emboltura"
         variants={fadeIn("left", 0.5)}
         initial="hidden"
         animate="show"
         exit="hidden"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          flexDirection: "row",
+          width: "100%",
+        }}
       >
         <div className="conteiner-title">
           <h1 className="title"> ¡Sobre mí!</h1>
@@ -171,8 +173,6 @@ const Profile = () => {
                             }}
                             key={index}
                             src={ele}
-
-                            //alt={`logo ${index}`}
                           />
                         );
                       })}

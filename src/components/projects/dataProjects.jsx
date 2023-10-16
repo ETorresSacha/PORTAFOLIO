@@ -23,4 +23,28 @@ export const proyectos = [
       gitHub: "https://github.com/ETorresSacha/skillHub-front",
     },
   },
+  {
+    id: "6521f58ff41c57ebd5b01796",
+    title: "SKILL HUB",
+    description:
+      "En esta pagina puedes encontrar a las personas indicadas para que realicen los trabajos eventuales que necesitas en tu hogar, empresa o institución.",
+    video: "../../../../image/imagen-nosotros.jpg",
+    links: {
+      depoly: "https://skillhub-production.netlify.app/",
+      youtube: "https://www.youtube.com/watch?v=NhQ30hiDNr0",
+      gitHub: "https://github.com/ETorresSacha/skillHub-front",
+    },
+  },
+  {
+    id: "6521f58ff41c57ebd5b01796",
+    title: "SKILL HUB",
+    description:
+      "En esta pagina puedes encontrar a las personas indicadas para que realicen los trabajos eventuales que necesitas en tu hogar, empresa o institución.",
+    video: "../../../../image/imagen-nosotros.jpg",
+    links: {
+      depoly: "https://skillhub-production.netlify.app/",
+      youtube: "https://www.youtube.com/watch?v=NhQ30hiDNr0",
+      gitHub: "https://github.com/ETorresSacha/skillHub-front",
+    },
+  },
 ];

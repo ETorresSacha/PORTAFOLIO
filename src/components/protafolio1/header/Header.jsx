@@ -6,7 +6,10 @@ import { redSocial } from "./DataHeader";
 
 const Header = () => {
   return (
-    <div className="absolute z-20 inline-block w-full top-1 md:top-2">
+    <div
+      style={{ border: "solid orange" }}
+      className="absolute z-20 inline-block w-full top-1 md:top-2"
+    >
       <motion.div
         variants={fadeIn("up", 0.5)}
         initial="hidden"
@@ -17,9 +20,9 @@ const Header = () => {
           <Link to="/">
             <h1
               style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}
-              className="my-3 text-4xl text-center text-white md:text-lef"
+              className="my-2 text-4xl text-center text-white md:text-lef"
             >
-              Tarre
+              Torre
               <span className="text-orange-600">Dev</span>
             </h1>
           </Link>
