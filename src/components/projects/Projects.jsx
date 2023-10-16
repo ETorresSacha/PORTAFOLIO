@@ -9,7 +9,6 @@ const Projects = () => {
   return (
     <div style={{ padding: " 50px 0 50px 0" }} className="conteiner">
       <motion.div
-        id="emboltura"
         variants={fadeIn("left", 0.5)}
         initial="hidden"
         animate="show"
@@ -43,23 +42,23 @@ const Projects = () => {
                 class="col-md-8"
                 style={{ padding: "10px", border: "solid transparent" }}
               >
-                <div class="card-body">
+                <div>
                   <h5
-                    class="card-title"
                     style={{
                       color: "white",
                       margin: "2px 0 10px auto",
-                      fontFamily: "Arial, Helvetica, sans-serif",
+                      fontSize: "20px",
+                      color: "aqua",
+                      fontFamily: " Georgia, Times, 'Times New Roman', serif",
                     }}
                   >
                     ONLINE STORE
                   </h5>
-                  <p class="card-text">
-                    Esta página es un ecommers, en esta tienda virtual puedes
-                    encontrar las mejores prendas que estan de moda y a los
-                    mejores precios.
+                  <p>
+                    Ecommerce, una tienda virtual donde puedes encontrar las
+                    mejores prendas que estan de moda y a los mejores precios.
                   </p>
-                  <div class="card-text" className="icon-link-project">
+                  <div className="icon-link-project">
                     <a
                       href="https://github.com/ETorresSacha/STORE-ONLINE-FRONT"
                       target="_blank"
@@ -104,14 +103,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div
-          className="conteiner-second"
-          style={{
-            width: "100%",
-            display: "flex",
-            border: "solid red",
-          }}
-        >
+        <div className="conteiner-second">
           {proyectos.map((element) => {
             return (
               <div
@@ -137,17 +129,18 @@ const Projects = () => {
                   >
                     <div class="card-body">
                       <h5
-                        class="card-title"
                         style={{
-                          color: "white",
                           margin: "2px 0 10px auto",
-                          fontFamily: "Arial, Helvetica, sans-serif",
+                          color: "aqua",
+                          fontSize: "20px",
+                          fontFamily:
+                            " Georgia, Times, 'Times New Roman', serif",
                         }}
                       >
                         {element.title}
                       </h5>
-                      <p class="card-text">{element.description}</p>
-                      <p class="card-text" className="icon-link-project">
+                      <p>{element.description}</p>
+                      <p className="icon-link-project">
                         <a
                           href={element.links.gitHub}
                           target="_blank"
@@ -209,4 +202,3 @@ const Projects = () => {
 };
 
 export default Projects;
-//!FALTA MEJORAR EN ESTILOS
