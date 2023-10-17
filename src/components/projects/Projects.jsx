@@ -25,9 +25,9 @@ const Projects = () => {
         </div>
 
         <div className="conteiner-first">
-          <div class="card mb-3" className="conteiner-card">
-            <div class="row g-0">
-              <div class="col-md-4">
+          <div className="conteiner-card card mb-3">
+            <div className="row g-0">
+              <div className="col-md-4">
                 <img
                   src="../../../../image/clothes.jpg"
                   style={{
@@ -39,7 +39,7 @@ const Projects = () => {
                 />
               </div>
               <div
-                class="col-md-8"
+                className="col-md-8"
                 style={{
                   padding: "10px",
                   border: "solid transparent",
@@ -80,7 +80,7 @@ const Projects = () => {
                     <a href="" target="_blank" rel="noreferrer">
                       <button
                         type="button"
-                        class="btn btn-outline-primary"
+                        className="btn btn-outline-primary"
                         style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
                       >
                         Ver la página
@@ -97,6 +97,8 @@ const Projects = () => {
                   backdroFilter: "blur(10px)",
                   borderRadius: "0px 0px 10px 10px",
                   textAlign: "center",
+                  color: "white",
+                  padding: " 6px 0 0 0",
                   fontFamily: "Lucida Sans', 'Lucida Sans Regular",
                 }}
               >
@@ -109,12 +111,9 @@ const Projects = () => {
         <div className="conteiner-second">
           {proyectos.map((element) => {
             return (
-              <div
-                key={element.id}
-                className="conteiner-card card mb-3 text-slate-50"
-              >
-                <div class="row g-0">
-                  <div class="col-md-4">
+              <div key={element.id} className="conteiner-card mb-3">
+                <div className="row g-0">
+                  <div className="col-md-4">
                     <img
                       src={element.video}
                       style={{
@@ -126,10 +125,10 @@ const Projects = () => {
                     />
                   </div>
                   <div
-                    class="col-md-8 text-slate-50"
+                    className="col-md-8 text-slate-50"
                     style={{ padding: "10px", border: "solid transparent" }}
                   >
-                    <div class="card-body">
+                    <div className="card-body">
                       <h5
                         style={{
                           margin: "2px 0 10px auto",
@@ -141,7 +140,7 @@ const Projects = () => {
                       >
                         {element.title}
                       </h5>
-                      <p className="text-slate-50">{element.description}</p>
+                      <p style={{ color: "white" }}>{element.description}</p>
                       <p className="icon-link-project">
                         <a
                           href={element.links.gitHub}
@@ -182,7 +181,7 @@ const Projects = () => {
                         >
                           <button
                             type="button"
-                            class="btn btn-outline-primary"
+                            className="btn btn-outline-primary"
                             style={{
                               fontFamily: "Arial, Helvetica, sans-serif",
                             }}
