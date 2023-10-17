@@ -1,6 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import "../../rutas//portafolio2/landingPage/landing.css";
+import "../../rutas//portafolio2/landing.css";
 import { proyectos } from "./dataProjects";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
