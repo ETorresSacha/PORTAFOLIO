@@ -18,10 +18,7 @@ const Contact = () => {
     },
   }));
   return (
-    <div
-      className="conteiner"
-      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
-    >
+    <div className="conteiner" style={{ padding: " 50px 0 50px 0" }}>
       <motion.div
         variants={fadeIn("left", 0.5)}
         initial="hidden"
@@ -37,8 +34,8 @@ const Contact = () => {
         <div className="conteiner-title">
           <h1 className="title">Contacto</h1>
         </div>
-        <div style={{ border: "solid white" }} className="conteiner-first">
-          <div style={{ padding: "10px" }} className="conteiner-box">
+        <div className="conteiner-first">
+          <div style={{ padding: "13px" }} className="conteiner-box">
             <div className="contact">
               <button class="button  email">eriktorressacha@email.com</button>
               <button class="button  phone">Cel:(+51) 964626322</button>
