@@ -1,5 +1,5 @@
 import React from "react";
-import { fadeIn } from "../../../utils/motionTrnsitions";
+import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
 import "./introduction.css";
 

@@ -3,7 +3,7 @@ import { optionsParticles } from "./particlesOptions";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import Introduccion from "../protafolio1/introduccion/Introduccion";
+import Introduccion from "../introduccion/Introduccion";
 
 const Cover = () => {
   const particlesInit = useCallback(async (engine) => {

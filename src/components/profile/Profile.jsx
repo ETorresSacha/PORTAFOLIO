@@ -1,7 +1,7 @@
 import React from "react";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
-import "../landingPage/landing.css";
+import "../../rutas//portafolio2/landingPage/landing.css";
 import "./profile.css";
 import { plataformas, skills } from "./dataProfile";
 

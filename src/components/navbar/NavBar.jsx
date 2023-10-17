@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../../utils/motionTrnsitions";
+import { fadeIn } from "../../utils/motionTrnsitions";
 import { dataNavbar } from "./NavBar.Data";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";

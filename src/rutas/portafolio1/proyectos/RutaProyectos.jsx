@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../header/Header";
-import NavBar from "../../navbar/NavBar";
-import Projects from "../../../projects/Projects";
+import NavBar from "../../../components/navbar/NavBar";
+import Header from "../../../components/header/Header";
+import Projects from "../../../components/projects/Projects";
 
 const RutaProyectos = () => {
   return (
