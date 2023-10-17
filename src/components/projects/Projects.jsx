@@ -17,7 +17,7 @@ const Projects = () => {
           display: "flex",
           flexWrap: "wrap",
           flexDirection: "row",
-          width: "100%",
+          width: "90%",
         }}
       >
         <div className="conteiner-title">

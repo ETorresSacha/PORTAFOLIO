@@ -18,7 +18,10 @@ const Contact = () => {
     },
   }));
   return (
-    <div style={{ padding: " 50px 0 50px 0" }} className="conteiner">
+    <div
+      className="conteiner"
+      style={{ padding: " 50px 0 50px 0", border: "solid red" }}
+    >
       <motion.div
         variants={fadeIn("left", 0.5)}
         initial="hidden"
@@ -28,13 +31,13 @@ const Contact = () => {
           display: "flex",
           flexWrap: "wrap",
           flexDirection: "row",
-          width: "100%",
+          width: "90%",
         }}
       >
         <div className="conteiner-title">
           <h1 className="title">Contacto</h1>
         </div>
-        <div className="conteiner-first">
+        <div style={{ border: "solid white" }} className="conteiner-first">
           <div style={{ padding: "10px" }} className="conteiner-box">
             <div className="contact">
               <button class="button  email">eriktorressacha@email.com</button>
