@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
@@ -7,16 +7,43 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
+import { validateData } from "./validacion";
+import { Toaster, toast } from "sonner";
 import "./contact.css";
 
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(orange[800]),
+  backgroundColor: orange[800],
+  "&:hover": {
+    backgroundColor: orange[500],
+  },
+}));
+
 const Contact = () => {
-  const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(orange[800]),
-    backgroundColor: orange[800],
-    "&:hover": {
-      backgroundColor: orange[500],
-    },
-  }));
+  const [input, setInput] = useState({
+    nombre: "",
+    email: "",
+    mensaje: "",
+  });
+
+  const [error, setError] = useState({});
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setInput({ ...input, [name]: value });
+    setError(validateData(name, value));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const hasEmptyValues = Object.values(input).some((value) => value === "");
+    console.log(hasEmptyValues);
+    if (hasEmptyValues) {
+      toast.error("Datos no validos");
+      return;
+    }
+  };
+
   return (
     <div className="conteiner" style={{ padding: " 50px 0 50px 0" }}>
       <motion.div
@@ -66,12 +93,27 @@ const Contact = () => {
               </div>
             </div>
             <div className="box">
-              <div className="box-inputs">
+              <form onSubmit={handleSubmit} className="box-inputs">
                 <TextField
                   id="outlined-basic"
                   label="Nombre"
                   variant="outlined"
+                  name="nombre"
+                  value={input.nombre}
+                  onChange={handleChange}
                 />
+                {error.nombre && (
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "12px",
+                      lineHeight: "0.1em",
+                      color: "red",
+                    }}
+                  >
+                    {error.nombre}
+                  </p>
+                )}
                 <TextField
                   sx={{
                     width: "100%",
@@ -79,9 +121,24 @@ const Contact = () => {
                     borderRadius: " 3px",
                   }}
                   id="outlined-basic"
-                  label="Correo"
+                  label="Email"
                   variant="outlined"
+                  name="email"
+                  value={input.email}
+                  onChange={handleChange}
                 />
+                {error.email && (
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "12px",
+                      lineHeight: "0.1em",
+                      color: "red",
+                    }}
+                  >
+                    {error.email}
+                  </p>
+                )}
 
                 <TextField
                   sx={{
@@ -92,7 +149,22 @@ const Contact = () => {
                   multiline
                   rows={4}
                   column={2}
+                  name="mensaje"
+                  value={input.mensaje}
+                  onChange={handleChange}
                 />
+                {error.mensaje && (
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: "12px",
+                      lineHeight: "0.1em",
+                      color: "red",
+                    }}
+                  >
+                    {error.mensaje}
+                  </p>
+                )}
                 <ColorButton
                   sx={{
                     width: "100%",
@@ -100,14 +172,16 @@ const Contact = () => {
                     fontfamily: "Arial, Helvetica, sans-serif",
                   }}
                   variant="contained"
+                  type="submit"
                 >
                   Enviar
                 </ColorButton>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </motion.div>
+      <Toaster richColors closeButton />
     </div>
   );
 };
