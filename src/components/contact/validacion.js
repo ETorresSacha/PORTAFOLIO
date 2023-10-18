@@ -1,10 +1,15 @@
+import { useState } from "react";
 
 const NOMBRE = "nombre";
 const EMAIL = "email";
 const MENSAJE = "mensaje";
 
 export const validateData = (name, value) => {
-  const error = {};
+  const error = {
+    nombre:"",
+    email:"",
+    mensaje:""
+  };
 
   switch (name) {
     case NOMBRE:
@@ -39,5 +44,5 @@ export const validateData = (name, value) => {
       break;
   }
 
-  return error;
+  return {...error}
 };

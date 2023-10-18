@@ -34,16 +34,16 @@ const Contact = () => {
     setError(validateData(name, value));
   };
 
+  console.log(error);
   const handleSubmit = (event) => {
     event.preventDefault();
     const hasEmptyValues = Object.values(input).some((value) => value === "");
-    console.log(hasEmptyValues);
+
     if (hasEmptyValues) {
       toast.error("Datos no validos");
       return;
     }
   };
-
   return (
     <div className="conteiner" style={{ padding: " 50px 0 50px 0" }}>
       <motion.div
@@ -103,16 +103,9 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 {error.nombre && (
-                  <p
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "12px",
-                      lineHeight: "0.1em",
-                      color: "red",
-                    }}
-                  >
+                  <span className="text-center text-sm text-red-500">
                     {error.nombre}
-                  </p>
+                  </span>
                 )}
                 <TextField
                   sx={{
@@ -128,16 +121,9 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 {error.email && (
-                  <p
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "12px",
-                      lineHeight: "0.1em",
-                      color: "red",
-                    }}
-                  >
+                  <span className="text-center text-sm text-red-500">
                     {error.email}
-                  </p>
+                  </span>
                 )}
 
                 <TextField
@@ -154,16 +140,9 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 {error.mensaje && (
-                  <p
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "12px",
-                      lineHeight: "0.1em",
-                      color: "red",
-                    }}
-                  >
+                  <span className="text-center text-sm text-red-500">
                     {error.mensaje}
-                  </p>
+                  </span>
                 )}
                 <ColorButton
                   sx={{
