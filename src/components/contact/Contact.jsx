@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
 import { validateData } from "./validacion";
+import { Link } from "react-router-dom";
 import { Toaster, toast } from "sonner";
 import "./contact.css";
 
@@ -26,23 +27,19 @@ const Contact = () => {
     mensaje: "",
   });
 
-  const [error, setError] = useState({});
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setInput({ ...input, [name]: value });
-    setError(validateData(name, value));
   };
 
-  console.log(error);
   const handleSubmit = (event) => {
     event.preventDefault();
-    const hasEmptyValues = Object.values(input).some((value) => value === "");
 
-    if (hasEmptyValues) {
-      toast.error("Datos no validos");
-      return;
-    }
+    // validando el formulario
+    const result = validateData(input);
+    result
+      ? toast.error(`${result}`)
+      : toast.success("Mensaje enviado correctamente");
   };
   return (
     <div className="conteiner" style={{ padding: " 50px 0 50px 0" }}>
@@ -64,32 +61,45 @@ const Contact = () => {
         <div className="conteiner-first">
           <div style={{ padding: "13px" }} className="conteiner-box">
             <div className="contact">
-              <button class="button  email">eriktorressacha@email.com</button>
-              <button class="button  phone">Cel:(+51) 964626322</button>
+              <button className="button  email">
+                <a href="mailto:eriktorressacha@email.com" target="_blank">
+                  eriktorressacha@email.com
+                </a>
+              </button>
+              <button className="button  phone">
+                <a href="tel:964626322">Cel:(+51) 964626322</a>
+              </button>
               <div
                 style={{
                   display: "flex",
                   justifyContent: "space-evenly",
                 }}
               >
-                <WhatsAppIcon
-                  style={{
-                    width: "60px",
-                    height: "60px",
-                    color: "white",
-                    background: "green",
-                    borderRadius: "10px",
-                  }}
-                />
-                <LinkedInIcon
-                  style={{
-                    width: "60px",
-                    height: "60px",
-                    color: "white",
-                    background: "blue",
-                    borderRadius: "10px",
-                  }}
-                />
+                <a href="https://wa.me/51964626322" target="_blank">
+                  <WhatsAppIcon
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      color: "white",
+                      background: "green",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/erik-torres-sacha-a93498200/"
+                  target="_blank"
+                >
+                  <LinkedInIcon
+                    style={{
+                      width: "60px",
+                      height: "60px",
+                      color: "white",
+                      background: "blue",
+                      borderRadius: "10px",
+                    }}
+                  />
+                </a>
               </div>
             </div>
             <div className="box">
@@ -102,11 +112,6 @@ const Contact = () => {
                   value={input.nombre}
                   onChange={handleChange}
                 />
-                {error.nombre && (
-                  <span className="text-center text-sm text-red-500">
-                    {error.nombre}
-                  </span>
-                )}
                 <TextField
                   sx={{
                     width: "100%",
@@ -120,11 +125,6 @@ const Contact = () => {
                   value={input.email}
                   onChange={handleChange}
                 />
-                {error.email && (
-                  <span className="text-center text-sm text-red-500">
-                    {error.email}
-                  </span>
-                )}
 
                 <TextField
                   sx={{
@@ -139,11 +139,7 @@ const Contact = () => {
                   value={input.mensaje}
                   onChange={handleChange}
                 />
-                {error.mensaje && (
-                  <span className="text-center text-sm text-red-500">
-                    {error.mensaje}
-                  </span>
-                )}
+
                 <ColorButton
                   sx={{
                     width: "100%",
