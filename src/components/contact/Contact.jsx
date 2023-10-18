@@ -8,9 +8,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
 import { validateData } from "./validacion";
-import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "sonner";
 import "./contact.css";
+
+const service_id = import.meta.env.VITE_SERVICE_ID;
+const templete_id = import.meta.env.VITE_TEMPLATE_ID;
+const publik_key = import.meta.env.VITE_PUBLIK_KEY;
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: theme.palette.getContrastText(orange[800]),
@@ -37,9 +41,20 @@ const Contact = () => {
 
     // validando el formulario
     const result = validateData(input);
-    result
-      ? toast.error(`${result}`)
-      : toast.success("Mensaje enviado correctamente");
+    if (result) {
+      toast.error(`${result}`);
+    } else {
+      // Envio de mensaje
+      emailjs.send(service_id, templete_id, input, publik_key).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => console.log(error.text)
+      );
+
+      // Mensaje de alerta
+      toast.success("Mensaje enviado correctamente");
+    }
   };
   return (
     <div className="conteiner" style={{ padding: " 50px 0 50px 0" }}>
