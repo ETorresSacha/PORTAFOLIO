@@ -54,6 +54,9 @@ const Contact = () => {
 
       // Mensaje de alerta
       toast.success("Mensaje enviado correctamente");
+
+      // Limpiar los campos
+      setInput({ nombre: "", email: "", mensaje: "" });
     }
   };
   return (
@@ -118,7 +121,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="box">
-              <form onSubmit={handleSubmit} className="box-inputs">
+              <form id="form" onSubmit={handleSubmit} className="box-inputs">
                 <TextField
                   id="outlined-basic"
                   label="Nombre"
