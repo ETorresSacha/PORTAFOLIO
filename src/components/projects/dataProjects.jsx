@@ -4,7 +4,7 @@ export const proyectos = [
     title: "FOOD",
     description:
       "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
-    imagen: "../../../../image/food.png",
+    imagen: "../../../public/image/food.png",
     links: {
       depoly: "https://food-pi.up.railway.app/",
       youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
@@ -16,7 +16,7 @@ export const proyectos = [
     title: "SKILL HUB",
     description:
       "En esta pagina puedes encontrar a las personas indicadas para que realicen los trabajos eventuales que necesitas en tu hogar, empresa o institución.",
-    imagen: "../../../../image/skillHub.jpg",
+    imagen: "../../../public/image/skillHub.jpg",
     links: {
       depoly: "https://skillhub-production.netlify.app/",
       youtube: "https://www.youtube.com/watch?v=NhQ30hiDNr0",

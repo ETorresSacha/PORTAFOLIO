@@ -29,7 +29,7 @@ const Projects = () => {
             <div className="row g-0">
               <div className="col-md-4">
                 <img
-                  src="../../../../image/STOREonline.png"
+                  src="../../../public/image/STOREonline.png"
                   style={{
                     width: "100%",
                     height: "100%",
