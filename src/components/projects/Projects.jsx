@@ -29,7 +29,7 @@ const Projects = () => {
             <div className="row g-0">
               <div className="col-md-4">
                 <img
-                  src="../../../../image/clothes.jpg"
+                  src="../../../../image/STOREonline.png"
                   style={{
                     width: "100%",
                     height: "100%",
@@ -93,7 +93,7 @@ const Projects = () => {
                 style={{
                   width: "100%",
                   height: "35px",
-                  background: "red",
+                  background: "darkorange",
                   backdroFilter: "blur(10px)",
                   borderRadius: "0px 0px 10px 10px",
                   textAlign: "center",
@@ -115,7 +115,7 @@ const Projects = () => {
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src={element.video}
+                      src={element.imagen}
                       style={{
                         width: "100%",
                         height: "100%",
