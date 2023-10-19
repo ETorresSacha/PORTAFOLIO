@@ -10,6 +10,7 @@ import Home from "./rutas/portafolio1/home/Home";
 import RutaProyectos from "./rutas/portafolio1/proyectos/RutaProyectos";
 import RutaPerfil from "./rutas/portafolio1/perfil/RutaPerfil";
 import RutaContactame from "./rutas/portafolio1/contactame/RutaContactame";
+import Cv from "./components/cv/Cv";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/proyectos" element={<RutaProyectos />} />
         <Route path="/perfil" element={<RutaPerfil />} />
         <Route path="/contactame" element={<RutaContactame />} />
+        <Route path="/pdf" element={<Cv />} />
       </Routes>
     </ThemeProvider>
   );
