@@ -17,7 +17,8 @@ export const proyectos = [
     title: "SKILL HUB",
     description:
       "En esta pagina puedes encontrar a las personas indicadas para que realicen los trabajos eventuales que necesitas en tu hogar, empresa o institución.",
-    imagen: "../../../public/image/skillHub.jpg",
+    imagen:
+      "https://user-images.githubusercontent.com/122553836/276769947-ac3fec8b-b5d9-4c83-bbed-1d01036a31b7.png",
     links: {
       depoly: "https://skillhub-production.netlify.app/",
       youtube: "https://www.youtube.com/watch?v=NhQ30hiDNr0",
