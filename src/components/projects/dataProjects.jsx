@@ -4,7 +4,8 @@ export const proyectos = [
     title: "FOOD",
     description:
       "Food es una página web en donde encontrarás las mejores recetas del mundo; también tienes la posibilidad de crear tu propia receta y compartirlo con el mundo.",
-    imagen: "../../../public/image/food.png",
+    imagen:
+      "https://user-images.githubusercontent.com/122553836/276435265-82eccec1-16ef-4fcc-9af4-9f2754d39147.png",
     links: {
       depoly: "https://food-pi.up.railway.app/",
       youtube: "https://www.youtube.com/watch?v=hb1q_y30AaU",
