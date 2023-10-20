@@ -1,6 +1,7 @@
 import React from "react";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./introduction.css";
 
 const Introduccion = () => {
@@ -19,21 +20,22 @@ const Introduccion = () => {
             Optimizo el rendimiento y proporciono soluciones personalizados que
             se adaptan a tus necesidades.
           </h4>
-          <div className="flex flex-row justify-evenly flex-wrap items-center  md:gap-10 md:flex-row">
-            <a
-              style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}
-              href="/proyectos"
+          <div
+            className="flex flex-row justify-evenly flex-wrap items-center  md:gap-10 md:flex-row"
+            style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}
+          >
+            <Link
+              to="/proyectos"
               className="px-3 py-1 my-2 transition-all border-2 text-white cursor-pointer  rounded-xl hover:shadow-xl hover:shadow-white/50"
             >
               Ver proyectos
-            </a>
-            <a
-              style={{ fontFamily: "Verdana, Geneva, Tahoma, sans-serif" }}
-              href="/contactame"
+            </Link>
+            <Link
+              to="/contactame"
               className="px-3 py-1 my-2 transition-all border-2  cursor-pointer text-orange-500 border-orange-500 rounded-xl hover:shadow-xl hover:shadow-orange-500"
             >
               Contacta conmigo
-            </a>
+            </Link>
           </div>
         </div>
       </motion.div>

@@ -25,13 +25,13 @@ const Header = () => {
             </h1>
           </Link>
           <div className="flex items-center justify-center mx-2 gap-7 text-white">
-            <a
-              className="transition-all duration-300 hover:text-orange-500"
-              href="/pdf"
+            <Link
+              to="/pdf"
               target="_blank"
+              className="transition-all duration-300 hover:text-orange-500"
             >
               <FaFileDownload size="35" />
-            </a>
+            </Link>
             {redSocial.map(({ logo, src }) => (
               <Link
                 key={src}
