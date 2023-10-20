@@ -21,7 +21,7 @@ function App() {
         <Route path="/proyectos" element={<RutaProyectos />} />
         <Route path="/perfil" element={<RutaPerfil />} />
         <Route path="/contactame" element={<RutaContactame />} />
-        <Route path="/pdf" element={<Cv />} />
+        {/* <Route path="/pdf" element={<Cv />} /> */}
       </Routes>
     </ThemeProvider>
   );
