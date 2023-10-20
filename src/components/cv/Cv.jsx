@@ -8,19 +8,26 @@ const Cv = () => {
     link.download = "MagaliPereyra.pdf";
     link.click();
   };
-  useEffect(() => {
-    if (typeof window.orientation !== "undefined") {
-      document.getElementById("enlaceDescargarPdf").click();
-      window.close();
-    }
-  }, [window.orientation]);
+  // useEffect(() => {
+  //   if (typeof window.orientation !== "undefined") {
+  //     document.getElementById("enlaceDescargarPdf").click();
+  //     window.close();
+  //     console.log("hola");
+  //   }
+  // }, [window.orientation]);
 
   return (
     <div style={{ position: "absolute", width: "100%", height: "100%" }}>
-      <object data={erik} type="application/pdf" width="100%" height="100%">
+      <a
+        href={erik}
+        id="enlaceDescargarPdf"
+        download="ErikTorres.pdf"
+        onClick={descargar}
+      ></a>
+      {/* <object data={erik} type="application/pdf" width="100%" height="100%">
         <br />
-        <a href={erik} id="enlaceDescargarPdf" download="ErikTorres.pdf"></a>
-      </object>
+        
+      </object> */}
     </div>
   );
 };
