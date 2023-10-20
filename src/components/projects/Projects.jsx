@@ -4,6 +4,7 @@ import "../../rutas//portafolio2/landing.css";
 import { proyectos } from "./dataProjects";
 import { fadeIn } from "../../utils/motionTrnsitions";
 import { motion } from "framer-motion";
+import storeOnline from "../../../public/image/STOREonline.png";
 
 const Projects = () => {
   return (
@@ -29,7 +30,7 @@ const Projects = () => {
             <div className="row g-0">
               <div className="col-md-4">
                 <img
-                  src="https://user-images.githubusercontent.com/122553836/276768910-a37f2cdf-2279-4e94-9626-eb188367b82c.png"
+                  src={storeOnline}
                   style={{
                     width: "100%",
                     height: "100%",
