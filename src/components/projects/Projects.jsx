@@ -77,16 +77,6 @@ const Projects = () => {
                         }}
                       />
                     </a>
-
-                    <a href="" target="_blank" rel="noreferrer">
-                      <button
-                        type="button"
-                        className="btn btn-outline-primary"
-                        style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
-                      >
-                        Ver la página
-                      </button>
-                    </a>
                   </div>
                 </div>
               </div>

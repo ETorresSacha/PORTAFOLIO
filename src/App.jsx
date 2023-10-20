@@ -1,11 +1,8 @@
-import { useState } from "react";
-
 import "./App.css";
 //import Landing from "./rutas/portafolio2/landingPage/Landing";
 import { ThemeProvider } from "@emotion/react";
 import theme from "./temaConfig";
 import { Routes, Route } from "react-router-dom";
-
 import Home from "./rutas/portafolio1/home/Home";
 import RutaProyectos from "./rutas/portafolio1/proyectos/RutaProyectos";
 import RutaPerfil from "./rutas/portafolio1/perfil/RutaPerfil";
