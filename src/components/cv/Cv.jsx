@@ -19,7 +19,7 @@ const Cv = () => {
     <div style={{ position: "absolute", width: "100%", height: "100%" }}>
       <object data={erik} type="application/pdf" width="100%" height="100%">
         <br />
-        <a href={erik} id="enlaceDescargarPdf"></a>
+        <a href={erik} id="enlaceDescargarPdf" download="ErikTorres.pdf"></a>
       </object>
     </div>
   );
