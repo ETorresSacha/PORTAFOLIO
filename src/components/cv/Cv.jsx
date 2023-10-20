@@ -2,33 +2,10 @@ import React, { useState, useEffect } from "react";
 import erik from "./erik.pdf";
 
 const Cv = () => {
-  // const descargar = () => {
-  //   document.getElementById("enlaceDescargarPdf").click();
-  //   window.close();
-  //   console.log("hola");
-  // };
-
-  // const [isPortrait, setIsPortrait] = useState(window.matchMedia("(orientation: portrait)").matches);
-
-  // useEffect(() => {
-  //   const mediaQuery = window.matchMedia("(orientation: portrait)");
-
-  //   const handleOrientationChange = (event) => {
-  //     setIsPortrait(event.matches);
-  //   };
-
-  //   mediaQuery.addListener(handleOrientationChange);
-
-  //   return () => {
-  //     mediaQuery.removeListener(handleOrientationChange);
-  //   };
-  // }, []);
-
   useEffect(() => {
     if (typeof window.orientation !== "undefined") {
       document.getElementById("enlaceDescargarPdf").click();
-      // window.close();
-      // console.log("hola");
+      window.close();
     }
   }, [window.orientation]);
 
