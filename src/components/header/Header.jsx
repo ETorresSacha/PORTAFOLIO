@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { redSocial } from "./DataHeader";
 import { FaFileDownload } from "react-icons/fa";
-import Cv from "../cv/Cv";
 
 const Header = () => {
   return (
@@ -26,16 +25,13 @@ const Header = () => {
             </h1>
           </Link>
           <div className="flex items-center justify-center mx-2 gap-7 text-white">
-            <Cv />
-            {/* <a
+            <a
               className="transition-all duration-300 hover:text-orange-500"
-              // href="/pdf"
-              // target="_blank"
+              href="/pdf"
+              target="_blank"
             >
-              <FaFileDownload size="35">
-                
-              </FaFileDownload>
-            </a> */}
+              <FaFileDownload size="35" />
+            </a>
             {redSocial.map(({ logo, src }) => (
               <Link
                 key={src}
